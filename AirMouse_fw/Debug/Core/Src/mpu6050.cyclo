@@ -1,0 +1,17 @@
+../Core/Src/mpu6050.c:26:9:MPU6050_ReadOneByte	1
+../Core/Src/mpu6050.c:36:6:MPU6050_WriteOneByte	1
+../Core/Src/mpu6050.c:41:6:MPU6050_WriteBits	1
+../Core/Src/mpu6050.c:57:6:MPU6050_WriteOneBit	2
+../Core/Src/mpu6050.c:69:6:MPU6050_ReadBuff	1
+../Core/Src/mpu6050.c:75:6:MPU6050_Check	2
+../Core/Src/mpu6050.c:87:6:MPU6050_CalAvgValue	2
+../Core/Src/mpu6050.c:102:6:MPU6050_SetClockSource	1
+../Core/Src/mpu6050.c:107:6:MPU6050_SetFullScaleGyroRange	1
+../Core/Src/mpu6050.c:112:6:MPU6050_SetLPF	1
+../Core/Src/mpu6050.c:117:6:MPU6050_SetFullScaleAccelRange	1
+../Core/Src/mpu6050.c:122:6:MPU6050_SetSleepEnabled	1
+../Core/Src/mpu6050.c:127:6:MPU6050_SetI2CMasterModeEnabled	1
+../Core/Src/mpu6050.c:132:6:MPU6050_SetI2CBypassEnabled	1
+../Core/Src/mpu6050.c:137:6:MPU6050_GetData	1
+../Core/Src/mpu6050.c:165:6:MPU6050_InitOffset	2
+../Core/Src/mpu6050.c:194:6:MPU6050_Init	1
