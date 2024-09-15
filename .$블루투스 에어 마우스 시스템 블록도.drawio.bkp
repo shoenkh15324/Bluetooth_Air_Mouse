@@ -1,0 +1,52 @@
+<mxfile host="Electron" modified="2024-06-28T04:31:12.549Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="eVb_mpj-rp_UIgibJ_nY" version="23.1.5" type="device">
+  <diagram name="페이지-1" id="p3GMl5WiQeSoV2CXa2yT">
+    <mxGraphModel dx="1050" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sL2Eu6m0SKZJJF_nSa0I-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="300" width="120" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="sL2Eu6m0SKZJJF_nSa0I-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="sL2Eu6m0SKZJJF_nSa0I-4" target="sL2Eu6m0SKZJJF_nSa0I-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sL2Eu6m0SKZJJF_nSa0I-4" value="센서 모듈&lt;br&gt;(IMU)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="510" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sL2Eu6m0SKZJJF_nSa0I-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="sL2Eu6m0SKZJJF_nSa0I-5" target="sL2Eu6m0SKZJJF_nSa0I-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sL2Eu6m0SKZJJF_nSa0I-16" value="UART 통신" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="sL2Eu6m0SKZJJF_nSa0I-11">
+          <mxGeometry x="0.2" y="1" relative="1" as="geometry">
+            <mxPoint x="31" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sL2Eu6m0SKZJJF_nSa0I-5" value="MCU&lt;br&gt;(데이터 처리, &lt;br&gt;블루투스 제어)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="410" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sL2Eu6m0SKZJJF_nSa0I-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="sL2Eu6m0SKZJJF_nSa0I-6" target="sL2Eu6m0SKZJJF_nSa0I-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sL2Eu6m0SKZJJF_nSa0I-19" value="블루투스 신호" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="sL2Eu6m0SKZJJF_nSa0I-18">
+          <mxGeometry x="0.1867" y="2" relative="1" as="geometry">
+            <mxPoint x="42" y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sL2Eu6m0SKZJJF_nSa0I-6" value="블루투스 모듈&lt;br&gt;(송수신 제어)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="310" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sL2Eu6m0SKZJJF_nSa0I-12" value="블루투스 에어 마우스" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="300" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sL2Eu6m0SKZJJF_nSa0I-13" value="호스트 기기&lt;br&gt;(PC)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sL2Eu6m0SKZJJF_nSa0I-17" value="GPIO 제어" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="430" y="490" as="geometry">
+            <mxPoint x="2" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

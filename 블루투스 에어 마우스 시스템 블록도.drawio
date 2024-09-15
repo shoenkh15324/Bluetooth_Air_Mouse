@@ -1,0 +1,122 @@
+<mxfile host="Electron" modified="2024-08-13T10:45:20.702Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="g-OCTtTFrtFIPpN8Qzo-" version="23.1.5" type="device">
+  <diagram name="페이지-1" id="p3GMl5WiQeSoV2CXa2yT">
+    <mxGraphModel dx="724" dy="428" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sL2Eu6m0SKZJJF_nSa0I-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="241.56" width="240" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="sL2Eu6m0SKZJJF_nSa0I-4" target="sL2Eu6m0SKZJJF_nSa0I-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-39" value="I2C" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FXADy4RPEiYWd-jTaQnA-38">
+          <mxGeometry x="-0.3225" y="1" relative="1" as="geometry">
+            <mxPoint x="8" y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sL2Eu6m0SKZJJF_nSa0I-4" value="센서 모듈&lt;br&gt;(IMU)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="130" y="451.56" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sL2Eu6m0SKZJJF_nSa0I-5" value="MCU&lt;br&gt;(데이터 처리, &lt;br&gt;블루투스 제어)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="190" y="371.56" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="sL2Eu6m0SKZJJF_nSa0I-6" target="sL2Eu6m0SKZJJF_nSa0I-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-41" value="UART" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FXADy4RPEiYWd-jTaQnA-40">
+          <mxGeometry x="-0.0792" y="-2" relative="1" as="geometry">
+            <mxPoint x="-10" y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sL2Eu6m0SKZJJF_nSa0I-6" value="블루투스 모듈&lt;br&gt;(데이터 송신)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="250" y="451.56" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sL2Eu6m0SKZJJF_nSa0I-12" value="블루투스 에어 마우스 파트" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="120" y="211.56" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-2" value="" style="shape=mxgraph.signs.tech.rss;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;rotation=-45;direction=west;" vertex="1" parent="1">
+          <mxGeometry x="520.01" y="186.87" width="50.17" height="53.13" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-8" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="485.09" y="240" width="120" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="FXADy4RPEiYWd-jTaQnA-13" target="FXADy4RPEiYWd-jTaQnA-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-12" value="UART&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FXADy4RPEiYWd-jTaQnA-11">
+          <mxGeometry x="0.2" y="1" relative="1" as="geometry">
+            <mxPoint x="26" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-13" value="MCU&lt;br&gt;(데이터를 USB HID 형식으로 변환)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="495.09" y="340" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-14" value="블루투스 모듈&lt;br&gt;(데이터 수신)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="495.09" y="250" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-16" value="" style="shape=mxgraph.signs.tech.usb;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="531.7900000000001" y="410" width="26.59" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-17" value="" style="shape=mxgraph.signs.tech.computer;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="508.64" y="472" width="72.91" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-18" value="USB 케이블" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="558.38" y="426" width="71.62" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-19" value="블루투스 동글 파트" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="240" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FXADy4RPEiYWd-jTaQnA-21" target="sL2Eu6m0SKZJJF_nSa0I-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-21" value="왼쪽 버튼&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="129.99" y="251.56" width="110.01" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FXADy4RPEiYWd-jTaQnA-22" target="sL2Eu6m0SKZJJF_nSa0I-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-32" value="GPIO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FXADy4RPEiYWd-jTaQnA-30">
+          <mxGeometry x="-0.1388" y="-2" relative="1" as="geometry">
+            <mxPoint x="25" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-22" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; 오른쪽 버튼" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="251.56" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FXADy4RPEiYWd-jTaQnA-23" target="sL2Eu6m0SKZJJF_nSa0I-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-34" value="PWM" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FXADy4RPEiYWd-jTaQnA-31">
+          <mxGeometry x="-0.0795" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-23" value="휠" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="217.49" y="266.56" width="45.01" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="FXADy4RPEiYWd-jTaQnA-24" target="sL2Eu6m0SKZJJF_nSa0I-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-24" value="측면 버튼1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="341.56" width="70.01" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="FXADy4RPEiYWd-jTaQnA-25" target="sL2Eu6m0SKZJJF_nSa0I-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-25" value="측면 버튼2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="391.56" width="70.01" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-33" value="GPIO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="170.00142857142848" y="346.5585714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-37" value="GPIO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="170.00142857142848" y="396.5585714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="FXADy4RPEiYWd-jTaQnA-43" value="" style="shape=mxgraph.signs.tech.rss;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;rotation=45;" vertex="1" parent="1">
+          <mxGeometry x="368.59" y="449.41" width="55" height="51.56" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
