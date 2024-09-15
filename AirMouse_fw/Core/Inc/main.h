@@ -65,6 +65,8 @@ void Error_Handler(void);
 #define UART_CLI_TX_GPIO_Port GPIOA
 #define UART_CLI_RX_Pin GPIO_PIN_10
 #define UART_CLI_RX_GPIO_Port GPIOA
+#define BTN_TEST_Pin GPIO_PIN_4
+#define BTN_TEST_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

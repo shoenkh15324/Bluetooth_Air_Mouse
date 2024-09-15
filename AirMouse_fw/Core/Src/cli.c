@@ -692,14 +692,14 @@ bool cliKeepLoop(void)
     return true;
   }
 
-//  if (uartAvailable(p_cli->ch) == 0)
-//  {
-//    return true;
-//  }
-//  else
-//  {
-//    return false;
-//  }
+  if (uartAvailable(p_cli->ch) == 0)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
 }
 
 bool cliAdd(const char *cmd_str, void (*p_func)(cli_args_t *))

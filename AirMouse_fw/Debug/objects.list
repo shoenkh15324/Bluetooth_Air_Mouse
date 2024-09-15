@@ -1,3 +1,4 @@
+"./Core/Src/button.o"
 "./Core/Src/cli.o"
 "./Core/Src/dma.o"
 "./Core/Src/gpio.o"

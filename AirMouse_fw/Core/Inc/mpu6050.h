@@ -360,6 +360,7 @@
 
 	
 #include "stm32f1xx_hal.h"
+#include "cli.h"
 
 typedef struct
 {
@@ -396,6 +397,10 @@ bool MPU6050_Check(void);
 
 void Get_MPU6050_Offset(void);
 void MPU6050_GetData(int16_t* ax, int16_t* ay, int16_t* az, int16_t* gx, int16_t* gy, int16_t* gz, int16_t* tmpr);
+
+void cliMPU6050(cli_args_t *args);
+
+
 #endif
 
 /******************* (C) COPYRIGHT 2014 Waveshare *****END OF FILE*******************/

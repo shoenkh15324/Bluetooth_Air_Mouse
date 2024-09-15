@@ -217,5 +217,42 @@ void MPU6050_Init(uint8_t	lpf)
 	MPU6050_WriteOneBit(MPU6050_RA_INT_PIN_CFG, MPU6050_INTCFG_INT_RD_CLEAR_BIT, 1);
   MPU6050_WriteOneBit(MPU6050_RA_INT_ENABLE, MPU6050_INTERRUPT_DATA_RDY_BIT, 1);
 	HAL_Delay(100);  // ���̷� ����ȭ ���
+
+	cliAdd("mpu6050", cliMPU6050);
+}
+
+void cliMPU6050(cli_args_t *args)
+{
+  bool ret = false;
+
+  if(args->argc == 1 && args->isStr(0, "show"))
+  {
+    int16_t ax = 0, ay = 0, az = 0;
+    int16_t gx = 0, gy = 0, gz = 0;
+    int16_t temp = 0;
+
+    uint8_t str = 0;
+
+    while(cliKeepLoop())
+    {
+      str = uartRead(CH_USART1);
+
+      if(str == 0x0D)
+        break;
+
+      MPU6050_GetData(&ax, &ay, &az, &gx, &gy, &gz, &temp);
+
+      cliPrintf("ax: %d, ay: %d, az: %d, gx: %d, gy: %d, gz: %d, temp: %d\n", ax, ay, az, gx, gy, gz, temp);
+
+      HAL_Delay(200);
+    }
+
+    ret = true;
+  }
+
+  if(ret != true)
+  {
+    cliPrintf("mpu6050 show\n");
+  }
 }
 
