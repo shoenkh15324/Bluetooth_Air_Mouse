@@ -227,9 +227,13 @@ void cliMPU6050(cli_args_t *args)
 
   if(args->argc == 1 && args->isStr(0, "show"))
   {
-    int16_t ax = 0, ay = 0, az = 0;
-    int16_t gx = 0, gy = 0, gz = 0;
-    int16_t temp = 0;
+    int16_t raw_ax = 0, raw_ay = 0, raw_az = 0;
+    int16_t raw_gx = 0, raw_gy = 0, raw_gz = 0;
+    int16_t raw_temp = 0;
+
+    double ax = 0.0, ay = 0.0, az = 0.0;
+    double gx = 0.0, gy = 0.0, gz = 0.0;
+    double temp = 0.0;
 
     uint8_t str = 0;
 
@@ -240,9 +244,17 @@ void cliMPU6050(cli_args_t *args)
       if(str == 0x0D)
         break;
 
-      MPU6050_GetData(&ax, &ay, &az, &gx, &gy, &gz, &temp);
+      MPU6050_GetData(&raw_ax, &raw_ay, &raw_az, &raw_gx, &raw_gy, &raw_gz, &raw_temp);
 
-      cliPrintf("ax: %d, ay: %d, az: %d, gx: %d, gy: %d, gz: %d, temp: %d\n", ax, ay, az, gx, gy, gz, temp);
+      ax = (double)raw_ax / 4096;
+      ay = (double)raw_ay / 4096;
+      az = (double)raw_az / 4096;
+      gx = (double)raw_gx / 32.8;
+      gy = (double)raw_gy / 32.8;
+      gz = (double)raw_gz / 32.8;
+      temp = (double)raw_temp / 100;
+
+      cliPrintf("ax: %.2f, ay: %.2f, az: %.2f, gx: %.2f, gy: %.2f, gz: %.2f, temp: %.2f\n", ax, ay, az, gx, gy, gz, temp);
 
       HAL_Delay(200);
     }

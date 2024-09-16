@@ -57,7 +57,7 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+USBD_HandleTypeDef hUsbDeviceFS;
 /* USER CODE END 0 */
 
 /**
@@ -100,12 +100,22 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   cliOpen(CH_USART1, 11520);
 
+  uint8_t report[4] = {0};  // HID ë§ˆìš°?Š¤ ë¦¬í¬?Š¸?Š” 4ë°”ì´?Š¸
+
+  report[0] = 0;   // ë²„íŠ¼ ?ƒ?ƒœ (0?? ë²„íŠ¼ ?—†?Œ)
+  report[1] = -1; // Xì¶? ?´?™ (?™¼ìª½ìœ¼ë¡? 1ë§Œí¼ ?´?™)
+  report[2] = 0;   // Yì¶? ?´?™ (??ì§ì´ì§? ?•Š?Œ)
+  report[3] = 0;   // ?œ  ?Š¤?¬ë¡? (?—†?Œ)
+
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    cliMain();
+    //cliMain();
+    USBD_HID_SendReport(&hUsbDeviceFS, report, sizeof(report));
+
+     HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 }

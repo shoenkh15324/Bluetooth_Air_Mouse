@@ -584,7 +584,7 @@ void cliPrintf(const char *fmt, ...)
 
 
   len = vsnprintf(p_cli->print_buffer, 256, fmt, arg);
-  va_end (arg);
+  va_end(arg);
 
   uartWrite(p_cli->ch, (uint8_t *)p_cli->print_buffer, len);
 }

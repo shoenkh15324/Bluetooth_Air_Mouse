@@ -8,22 +8,70 @@
 
 #include "button.h"
 
-typedef struct
-{
-  GPIO_TypeDef *port;
-  uint32_t pin;
-} button_tbl_t;
 
-button_tbl_t button_tbl[BUTTON_MAX_CH] =
-{
-  {BTN_TEST_GPIO_Port, BTN_TEST_Pin}, // button test
-};
 
+static uint8_t isLeftButtonPressed = 0;
+static uint8_t isRightButtonPressed = 0;
+
+static uint32_t lastDebounceTime_LEFT = 0;
+static uint32_t lastDebounceTime_RIGHT = 0;
 
 
 void buttonInit()
 {
   cliAdd("button", cliButton);
+}
+
+uint8_t isButtonPressed(GPIO_TypeDef *port, uint32_t pin)
+{
+  if (port == LEFT_BTN_GPIO_Port && pin == LEFT_BTN_Pin)
+  {
+    if (isLeftButtonPressed)
+    {
+      isLeftButtonPressed = 0;
+      return 1;
+    }
+  }
+  else if (port == RIGHT_BTN_GPIO_Port && pin == RIGHT_BTN_Pin)
+  {
+    if (isRightButtonPressed)
+    {
+      isRightButtonPressed = 0;
+      return 1;
+    }
+  }
+
+  return 0;
+}
+
+void buttonDeboucing(GPIO_TypeDef *port, uint32_t pin)
+{
+  uint32_t currentTime = HAL_GetTick ();
+
+  if (pin == LEFT_BTN_Pin)
+  {
+    if ((currentTime - lastDebounceTime_LEFT) > DEBOUNCE_DELAY)
+    {
+      lastDebounceTime_LEFT = currentTime;
+
+      if (HAL_GPIO_ReadPin(LEFT_BTN_GPIO_Port, LEFT_BTN_Pin) == GPIO_PIN_RESET)
+      {
+        isLeftButtonPressed = 1;
+      }
+    }
+    else if (pin == RIGHT_BTN_Pin)
+    {
+      if ((currentTime - lastDebounceTime_RIGHT) > DEBOUNCE_DELAY)
+      {
+        lastDebounceTime_RIGHT = currentTime;
+
+        if (HAL_GPIO_ReadPin(RIGHT_BTN_GPIO_Port, RIGHT_BTN_Pin) == GPIO_PIN_RESET)
+        {
+          isRightButtonPressed = 1;
+        }
+      }
+    }
+  }
 }
 
 void cliButton(cli_args_t *args)
@@ -40,11 +88,7 @@ void cliButton(cli_args_t *args)
 
       if(str == 0x0D) break;
 
-      for(int i=0; i<BUTTON_MAX_CH; i++)
-      {
-        cliPrintf("%d ", !HAL_GPIO_ReadPin(button_tbl[i].port, button_tbl[i].pin));
-      }
-      cliPrintf("\n");
+      cliPrintf("%d %d\n", !HAL_GPIO_ReadPin(LEFT_BTN_GPIO_Port, LEFT_BTN_Pin), !HAL_GPIO_ReadPin(RIGHT_BTN_GPIO_Port, RIGHT_BTN_Pin));
 
       HAL_Delay(50);
     }

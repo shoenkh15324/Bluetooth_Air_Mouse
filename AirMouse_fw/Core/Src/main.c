@@ -109,6 +109,14 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    buttonDeboucing(LEFT_BTN_GPIO_Port, LEFT_BTN_Pin);
+
+    if(isButtonPressed(LEFT_BTN_GPIO_Port, LEFT_BTN_Pin))
+    {
+      uint8_t str[] = "left button clicked\n";
+      HAL_UART_Transmit(&huart2, str, strlen((char *)str), 100);
+    }
+
     cliMain();
   }
   /* USER CODE END 3 */
