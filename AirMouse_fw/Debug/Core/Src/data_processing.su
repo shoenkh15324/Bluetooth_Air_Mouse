@@ -1,0 +1,5 @@
+../Core/Src/data_processing.c:27:6:initialize_filters	8	static
+../Core/Src/data_processing.c:35:8:calculate_mouse_x	24	static
+../Core/Src/data_processing.c:56:8:calculate_mouse_y	48	static
+../Core/Src/data_processing.c:78:6:readData	24	static
+../Core/Src/data_processing.c:85:6:dataProcessing	24	static

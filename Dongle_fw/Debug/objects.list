@@ -1,4 +1,6 @@
+"./Core/Src/bluetooth.o"
 "./Core/Src/cli.o"
+"./Core/Src/dataProcessing.o"
 "./Core/Src/dma.o"
 "./Core/Src/gpio.o"
 "./Core/Src/main.o"

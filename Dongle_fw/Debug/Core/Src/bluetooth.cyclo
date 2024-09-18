@@ -1,0 +1,3 @@
+../Core/Src/bluetooth.c:15:6:send_AT_command	1
+../Core/Src/bluetooth.c:22:6:BluetoothInit	1
+../Core/Src/bluetooth.c:36:6:BluetoothReset	1

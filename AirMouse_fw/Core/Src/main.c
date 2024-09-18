@@ -28,6 +28,8 @@
 #include "cli.h"
 #include "mpu6050.h"
 #include "button.h"
+#include "data_processing.h"
+#include "bluetooth.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -96,25 +98,30 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
   cliInit();
-  MPU6050_Init(0x00);
+  MPU6050_Init(0x06);
   buttonInit();
+  Bluetooth_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   cliOpen(CH_USART1, 11520);
 
+
+
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    buttonDeboucing(LEFT_BTN_GPIO_Port, LEFT_BTN_Pin);
-
-    if(isButtonPressed(LEFT_BTN_GPIO_Port, LEFT_BTN_Pin))
+    readData();
+    if(dataProcessing())
     {
-      uint8_t str[] = "left button clicked\n";
-      HAL_UART_Transmit(&huart2, str, strlen((char *)str), 100);
+
+    }
+    else
+    {
+      //Bluetooth_Reconnect();
     }
 
     cliMain();

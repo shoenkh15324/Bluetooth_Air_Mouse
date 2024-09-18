@@ -26,6 +26,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "cli.h"
+#include "bluetooth.h"
+#include "dataProcessing.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -57,7 +59,7 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-USBD_HandleTypeDef hUsbDeviceFS;
+
 /* USER CODE END 0 */
 
 /**
@@ -94,28 +96,29 @@ int main(void)
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
   cliInit();
+  BluetoothInit();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   cliOpen(CH_USART1, 11520);
 
-  uint8_t report[4] = {0};  // HID ÎßàÏö∞?ä§ Î¶¨Ìè¨?ä∏?äî 4Î∞îÏù¥?ä∏
-
-  report[0] = 0;   // Î≤ÑÌäº ?ÉÅ?Éú (0?? Î≤ÑÌäº ?óÜ?ùå)
-  report[1] = -1; // XÏ∂? ?ù¥?èô (?ôºÏ™ΩÏúºÎ°? 1ÎßåÌÅº ?ù¥?èô)
-  report[2] = 0;   // YÏ∂? ?ù¥?èô (??ÏßÅÏù¥Ïß? ?ïä?ùå)
-  report[3] = 0;   // ?ú† ?ä§?Å¨Î°? (?óÜ?ùå)
-
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    //cliMain();
-    USBD_HID_SendReport(&hUsbDeviceFS, report, sizeof(report));
 
-     HAL_Delay(1000);
+    if(receiveData())
+    {
+      dataToHID();
+    }
+    else
+    {
+      //BluetoothReset();
+    }
+
+    cliMain();
   }
   /* USER CODE END 3 */
 }

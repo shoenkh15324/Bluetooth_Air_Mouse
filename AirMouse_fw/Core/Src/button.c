@@ -9,6 +9,8 @@
 #include "button.h"
 
 
+#define DEBOUNCE_DELAY    100
+
 
 static uint8_t isLeftButtonPressed = 0;
 static uint8_t isRightButtonPressed = 0;
@@ -46,7 +48,7 @@ uint8_t isButtonPressed(GPIO_TypeDef *port, uint32_t pin)
 
 void buttonDeboucing(GPIO_TypeDef *port, uint32_t pin)
 {
-  uint32_t currentTime = HAL_GetTick ();
+  uint32_t currentTime = HAL_GetTick();
 
   if (pin == LEFT_BTN_Pin)
   {
@@ -54,7 +56,7 @@ void buttonDeboucing(GPIO_TypeDef *port, uint32_t pin)
     {
       lastDebounceTime_LEFT = currentTime;
 
-      if (HAL_GPIO_ReadPin(LEFT_BTN_GPIO_Port, LEFT_BTN_Pin) == GPIO_PIN_RESET)
+      if (HAL_GPIO_ReadPin(LEFT_BTN_GPIO_Port, LEFT_BTN_Pin) == GPIO_PIN_SET)
       {
         isLeftButtonPressed = 1;
       }
@@ -65,7 +67,7 @@ void buttonDeboucing(GPIO_TypeDef *port, uint32_t pin)
       {
         lastDebounceTime_RIGHT = currentTime;
 
-        if (HAL_GPIO_ReadPin(RIGHT_BTN_GPIO_Port, RIGHT_BTN_Pin) == GPIO_PIN_RESET)
+        if (HAL_GPIO_ReadPin(RIGHT_BTN_GPIO_Port, RIGHT_BTN_Pin) == GPIO_PIN_SET)
         {
           isRightButtonPressed = 1;
         }

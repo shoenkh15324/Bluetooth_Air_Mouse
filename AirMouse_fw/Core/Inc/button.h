@@ -12,8 +12,8 @@
 #include "cli.h"
 #include "usart.h"
 
-#define BUTTON_MAX_CH     1
-#define DEBOUNCE_DELAY    100
+#define BUTTON_MAX_CH     2
+
 
 
 #define RIGHT_BTN_Pin GPIO_PIN_3

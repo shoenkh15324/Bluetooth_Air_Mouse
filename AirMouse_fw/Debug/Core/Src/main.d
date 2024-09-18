@@ -26,7 +26,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Core/Inc/dma.h ../Core/Inc/main.h ../Core/Inc/i2c.h \
  ../Core/Inc/usart.h ../Core/Inc/gpio.h ../Core/Inc/cli.h \
  ../Core/Inc/usart.h ../Core/Inc/mpu6050.h ../Core/Inc/cli.h \
- ../Core/Inc/button.h ../Core/Inc/gpio.h
+ ../Core/Inc/button.h ../Core/Inc/gpio.h ../Core/Inc/data_processing.h \
+ ../Core/Inc/mpu6050.h ../Core/Inc/button.h ../Core/Inc/kalman_filter.h \
+ ../Core/Inc/complementary_filter.h ../Core/Inc/bluetooth.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
@@ -63,3 +65,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/cli.h:
 ../Core/Inc/button.h:
 ../Core/Inc/gpio.h:
+../Core/Inc/data_processing.h:
+../Core/Inc/mpu6050.h:
+../Core/Inc/button.h:
+../Core/Inc/kalman_filter.h:
+../Core/Inc/complementary_filter.h:
+../Core/Inc/bluetooth.h:
