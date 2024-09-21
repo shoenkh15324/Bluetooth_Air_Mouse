@@ -17,6 +17,7 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include <data_processing.h>
 #include "main.h"
 #include "dma.h"
 #include "usart.h"
@@ -27,7 +28,6 @@
 /* USER CODE BEGIN Includes */
 #include "cli.h"
 #include "bluetooth.h"
-#include "dataProcessing.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -96,12 +96,14 @@ int main(void)
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
   cliInit();
-  BluetoothInit();
+  bluetoothInit();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   cliOpen(CH_USART1, 11520);
+
+
 
   while (1)
   {
@@ -111,7 +113,7 @@ int main(void)
 
     if(receiveData())
     {
-      dataToHID();
+      sendHIDReport();
     }
     else
     {

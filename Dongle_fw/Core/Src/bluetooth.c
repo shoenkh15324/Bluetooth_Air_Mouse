@@ -12,36 +12,36 @@
 uint8_t buf[100];
 
 
-void send_AT_command(char *command)
+void sendATcommand(char *command)
 {
   HAL_UART_Transmit(&huart2, (uint8_t *)command, strlen(command), 100);
   HAL_UART_Transmit(&huart2, (uint8_t*)"\r\n", 2, 100);
   //HAL_UART_Receive(&huart2, buf, sizeof(buf), 100);
 }
 
-void BluetoothInit()
+void bluetoothInit()
 {
-  send_AT_command ("AT");
+  sendATcommand ("AT");
   HAL_Delay (200);
-  send_AT_command ("AT+RENEW");
+  sendATcommand ("AT+RENEW");
   HAL_Delay (200);
-  send_AT_command ("AT+RESET");
+  sendATcommand ("AT+RESET");
   HAL_Delay (200);
-  send_AT_command ("AT+ROLE1");
+  sendATcommand ("AT+ROLE1");
   HAL_Delay (200);
-  send_AT_command ("AT+RESET");
+  sendATcommand ("AT+RESET");
   HAL_Delay (2000);
 }
 
-void BluetoothReset()
+void bluetoothReset()
 {
-  send_AT_command ("AT+RENEW");
+  sendATcommand ("AT+RENEW");
   HAL_Delay (200);
-  send_AT_command ("AT+RESET");
+  sendATcommand ("AT+RESET");
   HAL_Delay (200);
-  send_AT_command ("AT+ROLE1");
+  sendATcommand ("AT+ROLE1");
   HAL_Delay (200);
-  send_AT_command ("AT+RESET");
+  sendATcommand ("AT+RESET");
   HAL_Delay (2000);
 }
 

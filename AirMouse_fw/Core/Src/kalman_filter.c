@@ -9,7 +9,6 @@
 #include "kalman_filter.h"
 
 
-
 void KalmanFilter_Init(KalmanFilter *kf,
                        float process_noise,
                        float measurement_noise,

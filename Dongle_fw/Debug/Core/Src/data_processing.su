@@ -1,0 +1,2 @@
+../Core/Src/data_processing.c:19:6:receiveData	16	static
+../Core/Src/data_processing.c:28:6:sendHIDReport	8	static

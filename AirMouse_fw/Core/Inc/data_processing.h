@@ -18,14 +18,17 @@
 #include "complementary_filter.h"
 
 
+#define SCALE_X               100.0           // X-axis movement sensitivity coefficient
+#define SCALE_Y               100.0           // Y-axis movement sensitivity coefficient
+#define TIME_INTERVAL         0.1f            // Changed to seconds. (100ms)
+
+
+void filterInit();
 void readData();
 bool dataProcessing();
 
-void initialize_kalman_filters();
-void initialize_complementary_filters();
-
-int8_t calculate_mouse_x();
-int8_t calculate_mouse_y();
+int8_t calculateMouseX();
+int8_t calculateMouseY();
 
 
 #endif /* INC_DATA_PROCESSING_H_ */

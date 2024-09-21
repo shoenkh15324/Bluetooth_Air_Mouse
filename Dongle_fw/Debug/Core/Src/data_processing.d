@@ -1,5 +1,5 @@
-Core/Src/dataProcessing.o: ../Core/Src/dataProcessing.c \
- ../Core/Inc/dataProcessing.h ../Core/Inc/cli.h ../Core/Inc/usart.h \
+Core/Src/data_processing.o: ../Core/Src/data_processing.c \
+ ../Core/Inc/data_processing.h ../Core/Inc/cli.h ../Core/Inc/usart.h \
  ../Core/Inc/main.h ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -28,8 +28,14 @@ Core/Src/dataProcessing.o: ../Core/Src/dataProcessing.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
  ../USB_DEVICE/App/usb_device.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
- ../USB_DEVICE/Target/usbd_conf.h ../Core/Inc/main.h
-../Core/Inc/dataProcessing.h:
+ ../USB_DEVICE/Target/usbd_conf.h ../Core/Inc/main.h \
+ ../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc/usbd_hid.h \
+ ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
+ ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
+ ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
+ ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
+ ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h
+../Core/Inc/data_processing.h:
 ../Core/Inc/cli.h:
 ../Core/Inc/usart.h:
 ../Core/Inc/main.h:
@@ -63,3 +69,9 @@ Core/Src/dataProcessing.o: ../Core/Src/dataProcessing.c \
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:
 ../USB_DEVICE/Target/usbd_conf.h:
 ../Core/Inc/main.h:
+../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc/usbd_hid.h:
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:

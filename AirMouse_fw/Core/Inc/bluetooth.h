@@ -14,8 +14,12 @@
 
 #include "usart.h"
 
-void send_AT_command(char *command);
-void Bluetooth_Init();
-void Bluetooth_Reconnect();
+
+#define SLAVE_MAC_ADDR  "4006A058653E" // Slave Module MAC Address
+
+
+void sendATcommand(char *command);
+void bluetoothInit();
+void bluetoothReconnect();
 
 #endif /* INC_BLUETOOTH_H_ */

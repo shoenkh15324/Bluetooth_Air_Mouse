@@ -27,25 +27,25 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000029  00000000  00000000  00010330  2**0
                   CONTENTS, READONLY
- 12 .debug_info   00012050  00000000  00000000  00010359  2**0
+ 12 .debug_info   00011f9e  00000000  00000000  00010359  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 000039ff  00000000  00000000  000223a9  2**0
+ 13 .debug_abbrev 00003995  00000000  00000000  000222f7  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 00000f58  00000000  00000000  00025da8  2**3
+ 14 .debug_aranges 00000f50  00000000  00000000  00025c90  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_rnglists 00000b67  00000000  00000000  00026d00  2**0
+ 15 .debug_rnglists 00000b60  00000000  00000000  00026be0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  0001b4cf  00000000  00000000  00027867  2**0
+ 16 .debug_macro  0001b408  00000000  00000000  00027740  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00015bdf  00000000  00000000  00042d36  2**0
+ 17 .debug_line   00015c5b  00000000  00000000  00042b48  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00089c57  00000000  00000000  00058915  2**0
+ 18 .debug_str    00089427  00000000  00000000  000587a3  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  000e256c  2**0
+ 19 .comment      00000043  00000000  00000000  000e1bca  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00005010  00000000  00000000  000e25b0  2**2
+ 20 .debug_frame  00004fec  00000000  00000000  000e1c10  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 0000007f  00000000  00000000  000e75c0  2**0
+ 21 .debug_line_str 0000007f  00000000  00000000  000e6bfc  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -1091,12 +1091,12 @@ Disassembly of section .text:
  8000ca8:	3df00000 	.word	0x3df00000
  8000cac:	41f00000 	.word	0x41f00000
 
-08000cb0 <send_AT_command>:
+08000cb0 <sendATcommand>:
 
 uint8_t buf[100];
 
 
-void send_AT_command(char *command)
+void sendATcommand(char *command)
 {
  8000cb0:	b580      	push	{r7, lr}
  8000cb2:	b082      	sub	sp, #8
@@ -1109,13 +1109,13 @@ void send_AT_command(char *command)
  8000cc0:	b29a      	uxth	r2, r3
  8000cc2:	2364      	movs	r3, #100	@ 0x64
  8000cc4:	6879      	ldr	r1, [r7, #4]
- 8000cc6:	4806      	ldr	r0, [pc, #24]	@ (8000ce0 <send_AT_command+0x30>)
+ 8000cc6:	4806      	ldr	r0, [pc, #24]	@ (8000ce0 <sendATcommand+0x30>)
  8000cc8:	f004 fc48 	bl	800555c <HAL_UART_Transmit>
   HAL_UART_Transmit(&huart2, (uint8_t*)"\r\n", 2, 100);
  8000ccc:	2364      	movs	r3, #100	@ 0x64
  8000cce:	2202      	movs	r2, #2
- 8000cd0:	4904      	ldr	r1, [pc, #16]	@ (8000ce4 <send_AT_command+0x34>)
- 8000cd2:	4803      	ldr	r0, [pc, #12]	@ (8000ce0 <send_AT_command+0x30>)
+ 8000cd0:	4904      	ldr	r1, [pc, #16]	@ (8000ce4 <sendATcommand+0x34>)
+ 8000cd2:	4803      	ldr	r0, [pc, #12]	@ (8000ce0 <sendATcommand+0x30>)
  8000cd4:	f004 fc42 	bl	800555c <HAL_UART_Transmit>
   //HAL_UART_Receive(&huart2, buf, sizeof(buf), 100);
 }
@@ -1126,39 +1126,39 @@ void send_AT_command(char *command)
  8000ce0:	20000bb4 	.word	0x20000bb4
  8000ce4:	0800da98 	.word	0x0800da98
 
-08000ce8 <BluetoothInit>:
+08000ce8 <bluetoothInit>:
 
-void BluetoothInit()
+void bluetoothInit()
 {
  8000ce8:	b580      	push	{r7, lr}
  8000cea:	af00      	add	r7, sp, #0
-  send_AT_command ("AT");
- 8000cec:	4810      	ldr	r0, [pc, #64]	@ (8000d30 <BluetoothInit+0x48>)
- 8000cee:	f7ff ffdf 	bl	8000cb0 <send_AT_command>
+  sendATcommand ("AT");
+ 8000cec:	4810      	ldr	r0, [pc, #64]	@ (8000d30 <bluetoothInit+0x48>)
+ 8000cee:	f7ff ffdf 	bl	8000cb0 <sendATcommand>
   HAL_Delay (200);
  8000cf2:	20c8      	movs	r0, #200	@ 0xc8
  8000cf4:	f001 fc7a 	bl	80025ec <HAL_Delay>
-  send_AT_command ("AT+RENEW");
- 8000cf8:	480e      	ldr	r0, [pc, #56]	@ (8000d34 <BluetoothInit+0x4c>)
- 8000cfa:	f7ff ffd9 	bl	8000cb0 <send_AT_command>
+  sendATcommand ("AT+RENEW");
+ 8000cf8:	480e      	ldr	r0, [pc, #56]	@ (8000d34 <bluetoothInit+0x4c>)
+ 8000cfa:	f7ff ffd9 	bl	8000cb0 <sendATcommand>
   HAL_Delay (200);
  8000cfe:	20c8      	movs	r0, #200	@ 0xc8
  8000d00:	f001 fc74 	bl	80025ec <HAL_Delay>
-  send_AT_command ("AT+RESET");
- 8000d04:	480c      	ldr	r0, [pc, #48]	@ (8000d38 <BluetoothInit+0x50>)
- 8000d06:	f7ff ffd3 	bl	8000cb0 <send_AT_command>
+  sendATcommand ("AT+RESET");
+ 8000d04:	480c      	ldr	r0, [pc, #48]	@ (8000d38 <bluetoothInit+0x50>)
+ 8000d06:	f7ff ffd3 	bl	8000cb0 <sendATcommand>
   HAL_Delay (200);
  8000d0a:	20c8      	movs	r0, #200	@ 0xc8
  8000d0c:	f001 fc6e 	bl	80025ec <HAL_Delay>
-  send_AT_command ("AT+ROLE1");
- 8000d10:	480a      	ldr	r0, [pc, #40]	@ (8000d3c <BluetoothInit+0x54>)
- 8000d12:	f7ff ffcd 	bl	8000cb0 <send_AT_command>
+  sendATcommand ("AT+ROLE1");
+ 8000d10:	480a      	ldr	r0, [pc, #40]	@ (8000d3c <bluetoothInit+0x54>)
+ 8000d12:	f7ff ffcd 	bl	8000cb0 <sendATcommand>
   HAL_Delay (200);
  8000d16:	20c8      	movs	r0, #200	@ 0xc8
  8000d18:	f001 fc68 	bl	80025ec <HAL_Delay>
-  send_AT_command ("AT+RESET");
- 8000d1c:	4806      	ldr	r0, [pc, #24]	@ (8000d38 <BluetoothInit+0x50>)
- 8000d1e:	f7ff ffc7 	bl	8000cb0 <send_AT_command>
+  sendATcommand ("AT+RESET");
+ 8000d1c:	4806      	ldr	r0, [pc, #24]	@ (8000d38 <bluetoothInit+0x50>)
+ 8000d1e:	f7ff ffc7 	bl	8000cb0 <sendATcommand>
   HAL_Delay (2000);
  8000d22:	f44f 60fa 	mov.w	r0, #2000	@ 0x7d0
  8000d26:	f001 fc61 	bl	80025ec <HAL_Delay>
@@ -3737,8 +3737,8 @@ bool qbufferRead(qbuffer_t *p_node, uint8_t *p_data, uint32_t length)
  8001dae:	4770      	bx	lr
 
 08001db0 <receiveData>:
-  }
-}
+// Received HID Data.
+int8_t HID_report[4];
 
 
 bool receiveData()
@@ -3746,16 +3746,14 @@ bool receiveData()
  8001db0:	b580      	push	{r7, lr}
  8001db2:	b082      	sub	sp, #8
  8001db4:	af02      	add	r7, sp, #8
-  HAL_UART_Receive(&huart2, (uint8_t *)report, sizeof(report), 100);
+  HAL_UART_Receive(&huart2, (uint8_t *)HID_report, sizeof(HID_report), 100);
  8001db6:	2364      	movs	r3, #100	@ 0x64
  8001db8:	2204      	movs	r2, #4
  8001dba:	490e      	ldr	r1, [pc, #56]	@ (8001df4 <receiveData+0x44>)
  8001dbc:	480e      	ldr	r0, [pc, #56]	@ (8001df8 <receiveData+0x48>)
  8001dbe:	f003 fc58 	bl	8005672 <HAL_UART_Receive>
 
-  //parse_hid_report((char *)temp_report);
-
-  cliPrintf("%d %d %d %d\n", report[0], report[1], report[2], report[3]);
+  cliPrintf("%d %d %d %d\n", HID_report[0], HID_report[1], HID_report[2], HID_report[3]);
  8001dc2:	4b0c      	ldr	r3, [pc, #48]	@ (8001df4 <receiveData+0x44>)
  8001dc4:	f993 3000 	ldrsb.w	r3, [r3]
  8001dc8:	4619      	mov	r1, r3
@@ -3783,16 +3781,16 @@ bool receiveData()
  8001df8:	20000bb4 	.word	0x20000bb4
  8001dfc:	0800dc24 	.word	0x0800dc24
 
-08001e00 <dataToHID>:
+08001e00 <sendHIDReport>:
 
-void dataToHID()
+void sendHIDReport()
 {
  8001e00:	b580      	push	{r7, lr}
  8001e02:	af00      	add	r7, sp, #0
-  USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t *)report, sizeof(report));
+  USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t *)HID_report, sizeof(HID_report));
  8001e04:	2204      	movs	r2, #4
- 8001e06:	4903      	ldr	r1, [pc, #12]	@ (8001e14 <dataToHID+0x14>)
- 8001e08:	4803      	ldr	r0, [pc, #12]	@ (8001e18 <dataToHID+0x18>)
+ 8001e06:	4903      	ldr	r1, [pc, #12]	@ (8001e14 <sendHIDReport+0x14>)
+ 8001e08:	4803      	ldr	r0, [pc, #12]	@ (8001e18 <sendHIDReport+0x18>)
  8001e0a:	f007 f8cd 	bl	8008fa8 <USBD_HID_SendReport>
 }
  8001e0e:	bf00      	nop
@@ -3937,8 +3935,8 @@ int main(void)
   /* USER CODE BEGIN 2 */
   cliInit();
  8001ecc:	f7fe ff38 	bl	8000d40 <cliInit>
-  BluetoothInit();
- 8001ed0:	f7fe ff0a 	bl	8000ce8 <BluetoothInit>
+  bluetoothInit();
+ 8001ed0:	f7fe ff0a 	bl	8000ce8 <bluetoothInit>
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -3958,8 +3956,8 @@ int main(void)
  8001ee4:	2b00      	cmp	r3, #0
  8001ee6:	d001      	beq.n	8001eec <main+0x40>
     {
-      dataToHID();
- 8001ee8:	f7ff ff8a 	bl	8001e00 <dataToHID>
+      sendHIDReport();
+ 8001ee8:	f7ff ff8a 	bl	8001e00 <sendHIDReport>
     else
     {
       //BluetoothReset();

@@ -31,7 +31,7 @@ typedef struct
 
 void buttonInit();
 uint8_t isButtonPressed(GPIO_TypeDef *port, uint32_t pin);
-void buttonDeboucing(GPIO_TypeDef *port, uint32_t pin);
+void buttonRead(GPIO_TypeDef *port, uint32_t pin);
 void cliButton(cli_args_t *args);
 
 #endif /* INC_BUTTON_H_ */

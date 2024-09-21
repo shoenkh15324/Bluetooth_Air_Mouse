@@ -9,48 +9,49 @@
 #include "bluetooth.h"
 
 
-uint8_t mac[] = "4006A058653E"; // Slave module MAC address.
-uint8_t buf[100];
+uint8_t mac[] = SLAVE_MAC_ADDR;   // Slave Module MAC Address.
+uint8_t buf[100];                 // buffer for receive AT command response.
 
-void send_AT_command(char *command)
+
+void sendATcommand(char *command)
 {
   HAL_UART_Transmit(&huart2, (uint8_t *)command, strlen(command), HAL_MAX_DELAY);
   HAL_UART_Transmit(&huart2, (uint8_t*)"\r\n", 2, HAL_MAX_DELAY);
   //HAL_UART_Receive(&huart2, buf, sizeof(buf), 200);
 }
 
-void Bluetooth_Init()
+void bluetoothInit()
 {
-  send_AT_command ("AT");
+  sendATcommand ("AT");
   HAL_Delay (200);
-  send_AT_command ("AT+RENEW");
+  sendATcommand ("AT+RENEW");
   HAL_Delay (200);
-  send_AT_command ("AT+RESET");
+  sendATcommand ("AT+RESET");
   HAL_Delay (200);
-  send_AT_command ("AT+ROLE0");
+  sendATcommand ("AT+ROLE0");
   HAL_Delay (200);
-  send_AT_command ("AT+RESET");
+  sendATcommand ("AT+RESET");
   HAL_Delay (200);
 
   uint8_t at_cmd[30];
   snprintf((char *)at_cmd, sizeof(at_cmd), "AT+CO0%s", mac);
-  send_AT_command ((char *)&at_cmd);
+  sendATcommand ((char *)&at_cmd);
   HAL_Delay (2000);
 }
 
-void Bluetooth_Reconnect()
+void bluetoothReconnect()
 {
-  send_AT_command ("AT+RENEW");
+  sendATcommand ("AT+RENEW");
   HAL_Delay (200);
-  send_AT_command ("AT+RESET");
+  sendATcommand ("AT+RESET");
   HAL_Delay (200);
-  send_AT_command ("AT+ROLE0");
+  sendATcommand ("AT+ROLE0");
   HAL_Delay (200);
-  send_AT_command ("AT+RESET");
+  sendATcommand ("AT+RESET");
   HAL_Delay (200);
 
   uint8_t at_cmd[30];
   snprintf((char *)at_cmd, sizeof(at_cmd), "AT+CO0%s", mac);
-  send_AT_command ((char *)&at_cmd);
+  sendATcommand ((char *)&at_cmd);
   HAL_Delay (2000);
 }

@@ -1,3 +1,0 @@
-../Core/Src/dataProcessing.c:16:6:parse_hid_report	4
-../Core/Src/dataProcessing.c:35:6:receiveData	1
-../Core/Src/dataProcessing.c:46:6:dataToHID	1

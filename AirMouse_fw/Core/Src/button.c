@@ -15,12 +15,14 @@
 static uint8_t isLeftButtonPressed = 0;
 static uint8_t isRightButtonPressed = 0;
 
+// Using for button debouncing.
 static uint32_t lastDebounceTime_LEFT = 0;
 static uint32_t lastDebounceTime_RIGHT = 0;
 
 
 void buttonInit()
 {
+  // Registering 'button' command in CLI.
   cliAdd("button", cliButton);
 }
 
@@ -46,12 +48,13 @@ uint8_t isButtonPressed(GPIO_TypeDef *port, uint32_t pin)
   return 0;
 }
 
-void buttonDeboucing(GPIO_TypeDef *port, uint32_t pin)
+void buttonRead(GPIO_TypeDef *port, uint32_t pin)
 {
   uint32_t currentTime = HAL_GetTick();
 
   if (pin == LEFT_BTN_Pin)
   {
+    // left button debouncing.
     if ((currentTime - lastDebounceTime_LEFT) > DEBOUNCE_DELAY)
     {
       lastDebounceTime_LEFT = currentTime;
@@ -61,6 +64,7 @@ void buttonDeboucing(GPIO_TypeDef *port, uint32_t pin)
         isLeftButtonPressed = 1;
       }
     }
+    /// right button debouncing.
     else if (pin == RIGHT_BTN_Pin)
     {
       if ((currentTime - lastDebounceTime_RIGHT) > DEBOUNCE_DELAY)

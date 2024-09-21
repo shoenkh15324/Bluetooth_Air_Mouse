@@ -1,5 +1,5 @@
-../Core/Src/data_processing.c:27:6:initialize_filters	8	static
-../Core/Src/data_processing.c:35:8:calculate_mouse_x	24	static
-../Core/Src/data_processing.c:56:8:calculate_mouse_y	48	static
-../Core/Src/data_processing.c:78:6:readData	24	static
-../Core/Src/data_processing.c:85:6:dataProcessing	24	static
+../Core/Src/data_processing.c:20:6:filterInit	8	static
+../Core/Src/data_processing.c:29:8:calculateMouseX	32	static
+../Core/Src/data_processing.c:49:8:calculateMouseY	48	static
+../Core/Src/data_processing.c:71:6:readData	24	static
+../Core/Src/data_processing.c:83:6:dataProcessing	24	static

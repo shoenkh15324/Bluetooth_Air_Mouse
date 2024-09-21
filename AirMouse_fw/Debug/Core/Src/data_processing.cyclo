@@ -1,5 +1,5 @@
-../Core/Src/data_processing.c:27:6:initialize_filters	1
-../Core/Src/data_processing.c:35:8:calculate_mouse_x	1
-../Core/Src/data_processing.c:56:8:calculate_mouse_y	1
-../Core/Src/data_processing.c:78:6:readData	1
-../Core/Src/data_processing.c:85:6:dataProcessing	3
+../Core/Src/data_processing.c:20:6:filterInit	1
+../Core/Src/data_processing.c:29:8:calculateMouseX	1
+../Core/Src/data_processing.c:49:8:calculateMouseY	1
+../Core/Src/data_processing.c:71:6:readData	1
+../Core/Src/data_processing.c:83:6:dataProcessing	3

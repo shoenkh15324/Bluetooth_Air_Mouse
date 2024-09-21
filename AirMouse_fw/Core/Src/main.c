@@ -17,6 +17,7 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include <data_processing.h>
 #include "main.h"
 #include "dma.h"
 #include "i2c.h"
@@ -28,7 +29,6 @@
 #include "cli.h"
 #include "mpu6050.h"
 #include "button.h"
-#include "data_processing.h"
 #include "bluetooth.h"
 /* USER CODE END Includes */
 
@@ -100,7 +100,7 @@ int main(void)
   cliInit();
   MPU6050_Init(0x06);
   buttonInit();
-  Bluetooth_Init();
+  bluetoothInit();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -115,14 +115,8 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
     readData();
-    if(dataProcessing())
-    {
 
-    }
-    else
-    {
-      //Bluetooth_Reconnect();
-    }
+    dataProcessing();
 
     cliMain();
   }

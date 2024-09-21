@@ -13,8 +13,8 @@
 #include "usart.h"
 #include "string.h"
 
-void BluetoothInit();
-void send_AT_command(char *command);
-void BluetoothReset();
+void bluetoothInit();
+void sendATcommand(char *command);
+void bluetoothReset();
 
 #endif /* INC_BLUETOOTH_H_ */

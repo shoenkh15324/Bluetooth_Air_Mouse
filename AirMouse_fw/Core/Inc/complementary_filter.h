@@ -14,6 +14,7 @@ typedef struct {
     float alpha;   // 상보 필터 계수 (0 < alpha < 1)
 } ComplementaryFilter;
 
+
 void ComplementaryFilter_Init(ComplementaryFilter *cf, float alpha, float initial_angle);
 float ComplementaryFilter_Update(ComplementaryFilter *cf,
                                  float accel_angle,
