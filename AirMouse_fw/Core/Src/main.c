@@ -103,7 +103,7 @@ int main(void)
   MPU6050_Init(0x06);
   dataProcessingInit();
   buttonInit();
-  bluetoothInit();
+  //bluetoothInit();
   /* USER CODE END 2 */
 
   /* Infinite loop */
