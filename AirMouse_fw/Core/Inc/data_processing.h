@@ -22,6 +22,7 @@
 
 #define SCALE_X               10.0            // X-axis movement sensitivity coefficient
 #define SCALE_Y               10.0            // Y-axis movement sensitivity coeffici
+#define TIME_INTERVAL         0.14f           // Yaw integration time-interval
 
 
 void dataProcessingInit();
