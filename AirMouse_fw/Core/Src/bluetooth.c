@@ -27,7 +27,7 @@ void bluetoothInit()
   HAL_Delay (200);
   sendATcommand ("AT+RESET");
   HAL_Delay (200);
-  sendATcommand ("AT+ROLE0");
+  sendATcommand ("AT+ROLE1");
   HAL_Delay (200);
   sendATcommand ("AT+RESET");
   HAL_Delay (200);
@@ -44,7 +44,7 @@ void bluetoothReconnect()
   HAL_Delay (200);
   sendATcommand ("AT+RESET");
   HAL_Delay (200);
-  sendATcommand ("AT+ROLE0");
+  sendATcommand ("AT+ROLE1");
   HAL_Delay (200);
   sendATcommand ("AT+RESET");
   HAL_Delay (200);

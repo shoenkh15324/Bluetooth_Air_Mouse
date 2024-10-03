@@ -16,8 +16,8 @@ KalmanFilter kf_z, kf_y;                      // Kalman Filter
 ComplementaryFilter cf_z, cf_y;               // Complementary Filter
 
 
-int SCALE_X = 350.0;           // X-axis movement sensitivity coefficient
-int SCALE_Y = 350.0;           // Y-axis movement sensitivity coefficient
+int SCALE_X = 350;           // X-axis movement sensitivity coefficient
+int SCALE_Y = 350;           // Y-axis movement sensitivity coefficient
 
 
 int16_t wheel_data = 0;
