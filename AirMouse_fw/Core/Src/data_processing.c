@@ -38,16 +38,16 @@ void filterInit()
 int8_t calculateMouseX()
 {
   // Read MPU6050 Datasheet.
-  double gz = (double)raw_gz / 32.8;
+  float gz = (float)raw_gz / 32.8;
 
   // Calculate yaw (rad)
-  double yaw = gz * TIME_INTERVAL;
+  float yaw = gz * TIME_INTERVAL;
 
   // Apply complementary filter
-  double c_filtered_yaw = ComplementaryFilter_Update(&cf_z, yaw, gz, TIME_INTERVAL);
+  float c_filtered_yaw = ComplementaryFilter_Update(&cf_z, yaw, gz, TIME_INTERVAL);
 
   // Apply kalman filter
-  double k_filtered_yaw = KalmanFilter_Update(&kf_z, c_filtered_yaw);
+  float k_filtered_yaw = KalmanFilter_Update(&kf_z, c_filtered_yaw);
 
   // Apply SENSITIVITY
   int mouse_x = (int)(k_filtered_yaw * SCALE_X * (-1));
@@ -59,19 +59,19 @@ int8_t calculateMouseX()
 int8_t calculateMouseY()
 {
   // Read MPU6050 Datasheet.
-  double ax = (double)raw_ax / 4096;
-  double ay = (double)raw_ay / 4096;
-  double az = (double)raw_az / 4096;
-  double gy = (double)raw_gy / 32.8;
+  float ax = (float)raw_ax / 4096;
+  float ay = (float)raw_ay / 4096;
+  float az = (float)raw_az / 4096;
+  float gy = (float)raw_gy / 32.8;
 
   // Calculate roll (rad)
-  double roll = atan2f(ax, sqrtf(ay * ay + az * az));
+  float roll = atan2f(ax, sqrtf(ay * ay + az * az));
 
   // Apply complementary filter
-  double c_filtered_roll = ComplementaryFilter_Update(&cf_y, roll, gy, (float)TIME_INTERVAL);
+  float c_filtered_roll = ComplementaryFilter_Update(&cf_y, roll, gy, (float)TIME_INTERVAL);
 
   // Apply kalman filter
-  double k_filtered_roll = KalmanFilter_Update(&kf_y, c_filtered_roll);
+  float k_filtered_roll = KalmanFilter_Update(&kf_y, c_filtered_roll);
 
   // Apply SENSITIVITY
   int mouse_y = (int)(k_filtered_roll * SCALE_Y);
@@ -155,9 +155,6 @@ bool dataProcessing()
 
   // Print HID_report data on cli terminal.
   //cliPrintf("%d %d %d %d (encoder : %d)\n", HID_report[0], HID_report[1], HID_report[2], HID_report[3], prev_wheel);
-
-  // Data Processing delay.
-  HAL_Delay((uint32_t)(TIME_INTERVAL * 10));
 
   return 1;
 }

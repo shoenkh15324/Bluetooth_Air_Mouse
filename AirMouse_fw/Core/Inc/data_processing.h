@@ -20,7 +20,6 @@
 #include "tim.h"
 
 
-#define TIME_INTERVAL         0.1f            // Changed to seconds. (100ms)
 #define SCALE_X               10.0            // X-axis movement sensitivity coefficient
 #define SCALE_Y               10.0            // Y-axis movement sensitivity coeffici
 

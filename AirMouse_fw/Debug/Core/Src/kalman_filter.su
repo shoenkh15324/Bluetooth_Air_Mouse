@@ -1,2 +1,2 @@
 ../Core/Src/kalman_filter.c:12:6:KalmanFilter_Init	24	static
-../Core/Src/kalman_filter.c:24:8:KalmanFilter_Update	40	static
+../Core/Src/kalman_filter.c:24:7:KalmanFilter_Update	24	static

@@ -10,16 +10,16 @@
 
 
 typedef struct {
-  double angle;   // 필터링된 각도 값
-  double alpha;   // 상보 필터 계수 (0 < alpha < 1)
+  float angle;   // 필터링된 각도 값
+  float alpha;   // 상보 필터 계수 (0 < alpha < 1)
 } ComplementaryFilter;
 
 
-void ComplementaryFilter_Init(ComplementaryFilter *cf, double alpha, double initial_angle);
-double ComplementaryFilter_Update(ComplementaryFilter *cf,
-                                  double accel_angle,
-                                  double gyro_rate,
-                                  double dt);
+void ComplementaryFilter_Init(ComplementaryFilter *cf, float alpha, float initial_angle);
+float ComplementaryFilter_Update(ComplementaryFilter *cf,
+                                 float accel_angle,
+                                 float gyro_rate,
+                                 float dt);
 
 
 #endif /* INC_COMPLEMENTARY_FILTER_H_ */
