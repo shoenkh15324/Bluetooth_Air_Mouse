@@ -10,9 +10,9 @@
 
 
 void KalmanFilter_Init(KalmanFilter *kf,
-                       float process_noise,
-                       float measurement_noise,
-                       float initial_value)
+                       double process_noise,
+                       double measurement_noise,
+                       double initial_value)
 {
     kf->q = process_noise;
     kf->r = measurement_noise;
@@ -21,7 +21,7 @@ void KalmanFilter_Init(KalmanFilter *kf,
     kf->k = 0.0f;  // 초기 칼만 이득 값
 }
 
-float KalmanFilter_Update(KalmanFilter *kf, float measurement)
+double KalmanFilter_Update(KalmanFilter *kf, double measurement)
 {
     // 1. 예측 단계
     kf->p += kf->q;

@@ -1,7 +1,7 @@
-../Core/Src/data_processing.c:26:6:dataProcessingInit	8	static
-../Core/Src/data_processing.c:33:6:filterInit	8	static
-../Core/Src/data_processing.c:42:8:calculateMouseX	32	static
-../Core/Src/data_processing.c:63:8:calculateMouseY	48	static
-../Core/Src/data_processing.c:86:8:calculateMouseWheel	16	static
-../Core/Src/data_processing.c:121:6:readData	24	static
-../Core/Src/data_processing.c:132:6:dataProcessing	32	static
+../Core/Src/data_processing.c:22:6:dataProcessingInit	8	static
+../Core/Src/data_processing.c:29:6:filterInit	24	static
+../Core/Src/data_processing.c:38:8:calculateMouseX	72	static
+../Core/Src/data_processing.c:59:8:calculateMouseY	104	static
+../Core/Src/data_processing.c:82:8:calculateMouseWheel	16	static
+../Core/Src/data_processing.c:114:6:readData	24	static
+../Core/Src/data_processing.c:124:6:dataProcessing	16	static

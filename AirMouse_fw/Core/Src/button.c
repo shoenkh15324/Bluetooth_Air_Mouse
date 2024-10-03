@@ -9,7 +9,7 @@
 #include "button.h"
 
 
-#define DEBOUNCE_DELAY    50
+#define DEBOUNCE_DELAY    15
 
 
 static uint8_t isLeftButtonPressed = 0;

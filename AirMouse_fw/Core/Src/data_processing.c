@@ -16,10 +16,6 @@ KalmanFilter kf_z, kf_y;                      // Kalman Filter
 ComplementaryFilter cf_z, cf_y;               // Complementary Filter
 
 
-float SCALE_X = 10.0f;           // X-axis movement sensitivity coefficient
-float SCALE_Y = 10.0f;           // Y-axis movement sensitivity coefficient
-
-
 int32_t prev_wheel = 0;
 
 
@@ -42,19 +38,19 @@ void filterInit()
 int8_t calculateMouseX()
 {
   // Read MPU6050 Datasheet.
-  float gz = (float)raw_gz / 32.8;
+  double gz = (double)raw_gz / 32.8;
 
   // Calculate yaw (rad)
-  float yaw = gz * TIME_INTERVAL;
+  double yaw = gz * TIME_INTERVAL;
 
   // Apply complementary filter
-  float c_filtered_yaw = ComplementaryFilter_Update(&cf_z, yaw, gz, TIME_INTERVAL);
+  double c_filtered_yaw = ComplementaryFilter_Update(&cf_z, yaw, gz, TIME_INTERVAL);
 
   // Apply kalman filter
-  float k_filtered_yaw = KalmanFilter_Update(&kf_z, c_filtered_yaw);
+  double k_filtered_yaw = KalmanFilter_Update(&kf_z, c_filtered_yaw);
 
   // Apply SENSITIVITY
-  float mouse_x = k_filtered_yaw * SCALE_X * (-1);
+  int mouse_x = (int)(k_filtered_yaw * SCALE_X * (-1));
 
   return mouse_x;
 }
@@ -63,30 +59,29 @@ int8_t calculateMouseX()
 int8_t calculateMouseY()
 {
   // Read MPU6050 Datasheet.
-  float ax = (float)raw_ax / 4096;
-  float ay = (float)raw_ay / 4096;
-  float az = (float)raw_az / 4096;
-  float gy = (float)raw_gy / 32.8;
+  double ax = (double)raw_ax / 4096;
+  double ay = (double)raw_ay / 4096;
+  double az = (double)raw_az / 4096;
+  double gy = (double)raw_gy / 32.8;
 
   // Calculate roll (rad)
-  float roll = atan2f(ax, sqrtf(ay * ay + az * az));
+  double roll = atan2f(ax, sqrtf(ay * ay + az * az));
 
   // Apply complementary filter
-  float c_filtered_roll = ComplementaryFilter_Update(&cf_y, roll, gy, (float)TIME_INTERVAL);
+  double c_filtered_roll = ComplementaryFilter_Update(&cf_y, roll, gy, (float)TIME_INTERVAL);
 
   // Apply kalman filter
-  float k_filtered_roll = KalmanFilter_Update(&kf_y, c_filtered_roll);
+  double k_filtered_roll = KalmanFilter_Update(&kf_y, c_filtered_roll);
 
   // Apply SENSITIVITY
-  float mouse_y = k_filtered_roll * SCALE_Y;
+  int mouse_y = (int)(k_filtered_roll * SCALE_Y);
 
   return mouse_y;
 }
 
 int8_t calculateMouseWheel()
 {
-  int32_t curr_wheel = __HAL_TIM_GET_COUNTER(&htim3);
-  int32_t wheel_move = 0;
+  int16_t curr_wheel = __HAL_TIM_GET_COUNTER(&htim3);
 
   // wrap-around 처리 (128 -> 0 or 0 -> 128)
   if (curr_wheel == 0 && prev_wheel == 128)
@@ -103,13 +98,11 @@ int8_t calculateMouseWheel()
   // 일반적인 값 증가/감소 처리
   if (curr_wheel > prev_wheel)
   {
-    wheel_move = curr_wheel - prev_wheel;
     prev_wheel = curr_wheel;
     return 1;  // 휠 위로 스크롤
   }
   else if (curr_wheel < prev_wheel)
   {
-    wheel_move = curr_wheel - prev_wheel;
     prev_wheel = curr_wheel;
     return -1;  // 휠 아래로 스크롤
   }
@@ -126,7 +119,6 @@ void readData()
   // Read button data
   buttonRead(LEFT_BTN_GPIO_Port, LEFT_BTN_Pin);
   buttonRead(RIGHT_BTN_GPIO_Port, RIGHT_BTN_Pin);
-
 }
 
 bool dataProcessing()
@@ -159,10 +151,10 @@ bool dataProcessing()
   HID_report[3] = calculateMouseWheel();
 
   // Data Transmit.
-  HAL_UART_Transmit(&huart2, (uint8_t *)HID_report, sizeof(HID_report), 50);
+  HAL_UART_Transmit(&huart2, (uint8_t *)HID_report, sizeof(HID_report), 10);
 
   // Print HID_report data on cli terminal.
-  cliPrintf("%d %d %d %d (encoder : %d)\n", HID_report[0], HID_report[1], HID_report[2], HID_report[3], prev_wheel);
+  //cliPrintf("%d %d %d %d (encoder : %d)\n", HID_report[0], HID_report[1], HID_report[2], HID_report[3], prev_wheel);
 
   // Data Processing delay.
   HAL_Delay((uint32_t)(TIME_INTERVAL * 10));
