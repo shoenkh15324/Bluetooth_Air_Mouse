@@ -23,34 +23,20 @@ void sendATcommand(char *command)
 
 void bluetoothInit()
 {
-  sendATcommand ("AT+RENEW");
+  sendATcommand ("AT\r\n");
   HAL_Delay (200);
-  sendATcommand ("AT+RESET");
+  sendATcommand ("AT+RENEW\r\n");
   HAL_Delay (200);
-  sendATcommand ("AT+ROLE1");
+  sendATcommand ("AT+RESET\r\n");
   HAL_Delay (200);
-  sendATcommand ("AT+RESET");
+  sendATcommand ("AT+ROLE1\r\n");
+  HAL_Delay (200);
+  sendATcommand ("AT+RESET\r\n");
   HAL_Delay (200);
 
   uint8_t at_cmd[30];
-  snprintf((char *)at_cmd, sizeof(at_cmd), "AT+CO0%s", mac);
+  snprintf((char *)at_cmd, sizeof(at_cmd), "AT+CO0%s\r\n", mac);
   sendATcommand ((char *)&at_cmd);
   HAL_Delay (2000);
 }
 
-void bluetoothReconnect()
-{
-  sendATcommand ("AT+RENEW");
-  HAL_Delay (200);
-  sendATcommand ("AT+RESET");
-  HAL_Delay (200);
-  sendATcommand ("AT+ROLE1");
-  HAL_Delay (200);
-  sendATcommand ("AT+RESET");
-  HAL_Delay (200);
-
-  uint8_t at_cmd[30];
-  snprintf((char *)at_cmd, sizeof(at_cmd), "%s", mac);
-  sendATcommand ((char *)&at_cmd);
-  HAL_Delay (2000);
-}
