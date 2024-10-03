@@ -18,7 +18,7 @@ int8_t HID_report[4];
 
 bool receiveData()
 {
-  HAL_UART_Receive(&huart2, (uint8_t *)HID_report, sizeof(HID_report), 100);
+  HAL_UART_Receive(&huart2, (uint8_t *)HID_report, sizeof(HID_report), HAL_MAX_DELAY);
 
   cliPrintf("%d %d %d %d\n", HID_report[0], HID_report[1], HID_report[2], HID_report[3]);
 

@@ -88,7 +88,7 @@ void HAL_TIM_Encoder_MspInit(TIM_HandleTypeDef* tim_encoderHandle)
     PA6     ------> TIM3_CH1
     PA7     ------> TIM3_CH2
     */
-    GPIO_InitStruct.Pin = ENCODER_OTA_Pin|ENCODER_OTB_Pin;
+    GPIO_InitStruct.Pin = ENCODER_OTB_Pin|ENCODER_OTA_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
@@ -117,7 +117,7 @@ void HAL_TIM_Encoder_MspDeInit(TIM_HandleTypeDef* tim_encoderHandle)
     PA6     ------> TIM3_CH1
     PA7     ------> TIM3_CH2
     */
-    HAL_GPIO_DeInit(GPIOA, ENCODER_OTA_Pin|ENCODER_OTB_Pin);
+    HAL_GPIO_DeInit(GPIOA, ENCODER_OTB_Pin|ENCODER_OTA_Pin);
 
     /* TIM3 interrupt Deinit */
     HAL_NVIC_DisableIRQ(TIM3_IRQn);

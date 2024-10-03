@@ -61,10 +61,10 @@ void Error_Handler(void);
 #define UART_BT_TX_GPIO_Port GPIOA
 #define UART_BT_RX_Pin GPIO_PIN_3
 #define UART_BT_RX_GPIO_Port GPIOA
-#define ENCODER_OTA_Pin GPIO_PIN_6
-#define ENCODER_OTA_GPIO_Port GPIOA
-#define ENCODER_OTB_Pin GPIO_PIN_7
+#define ENCODER_OTB_Pin GPIO_PIN_6
 #define ENCODER_OTB_GPIO_Port GPIOA
+#define ENCODER_OTA_Pin GPIO_PIN_7
+#define ENCODER_OTA_GPIO_Port GPIOA
 #define UART_CLI_TX_Pin GPIO_PIN_9
 #define UART_CLI_TX_GPIO_Port GPIOA
 #define UART_CLI_RX_Pin GPIO_PIN_10

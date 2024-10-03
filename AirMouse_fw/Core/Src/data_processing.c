@@ -16,11 +16,11 @@ KalmanFilter kf_z, kf_y;                      // Kalman Filter
 ComplementaryFilter cf_z, cf_y;               // Complementary Filter
 
 
-int SCALE_X = 350;           // X-axis movement sensitivity coefficient
-int SCALE_Y = 350;           // Y-axis movement sensitivity coefficient
+float SCALE_X = 10.0f;           // X-axis movement sensitivity coefficient
+float SCALE_Y = 10.0f;           // Y-axis movement sensitivity coefficient
 
 
-int16_t wheel_data = 0;
+int32_t prev_wheel = 0;
 
 
 void dataProcessingInit()
@@ -83,6 +83,41 @@ int8_t calculateMouseY()
   return mouse_y;
 }
 
+int8_t calculateMouseWheel()
+{
+  int32_t curr_wheel = __HAL_TIM_GET_COUNTER(&htim3);
+  int32_t wheel_move = 0;
+
+  // wrap-around 처리 (128 -> 0 or 0 -> 128)
+  if (curr_wheel == 0 && prev_wheel == 128)
+  {
+    prev_wheel = curr_wheel;
+    return 1;  // 시계 방향 회전, 휠 위로 스크롤
+  }
+  else if (curr_wheel == 128 && prev_wheel == 0)
+  {
+    prev_wheel = curr_wheel;
+    return -1;  // 반시계 방향 회전, 휠 아래로 스크롤
+  }
+
+  // 일반적인 값 증가/감소 처리
+  if (curr_wheel > prev_wheel)
+  {
+    wheel_move = curr_wheel - prev_wheel;
+    prev_wheel = curr_wheel;
+    return 1;  // 휠 위로 스크롤
+  }
+  else if (curr_wheel < prev_wheel)
+  {
+    wheel_move = curr_wheel - prev_wheel;
+    prev_wheel = curr_wheel;
+    return -1;  // 휠 아래로 스크롤
+  }
+
+  // 변화가 없을 때
+  return 0;
+}
+
 void readData()
 {
   // Read MPU6050 data.
@@ -92,8 +127,6 @@ void readData()
   buttonRead(LEFT_BTN_GPIO_Port, LEFT_BTN_Pin);
   buttonRead(RIGHT_BTN_GPIO_Port, RIGHT_BTN_Pin);
 
-  // Read Mouse wheel data.
-  wheel_data = __HAL_TIM_GET_COUNTER(&htim3);
 }
 
 bool dataProcessing()
@@ -119,47 +152,21 @@ bool dataProcessing()
   // Mouse Right Button Clicked.
   else if(isButtonPressed(RIGHT_BTN_GPIO_Port, RIGHT_BTN_Pin))
   {
-    //HID_report[0] = 0x02;
-    setSCALE_X(50);
-    setSCALE_Y(50);
+    HID_report[0] = 0x02;
   }
 
   // Mouse Wheel
-  HID_report[3] = wheel_data;
+  HID_report[3] = calculateMouseWheel();
 
   // Data Transmit.
   HAL_UART_Transmit(&huart2, (uint8_t *)HID_report, sizeof(HID_report), 50);
 
-//  cliPrintf("ax: %.2f, ay: %.2f, az: %.2f, gx: %.2f, gy: %.2f, gz: %.2f\n",
-//            (float)raw_ax / 4096,
-//            (float)raw_ay / 4096,
-//            (float)raw_az / 4096,
-//            (float)raw_gx / 32.8,
-//            (float)raw_gy / 32.8,
-//            (float)raw_gz / 32.8);
-
   // Print HID_report data on cli terminal.
-  cliPrintf("%d %d %d %d\n", HID_report[0], HID_report[1], HID_report[2], HID_report[3]);
+  cliPrintf("%d %d %d %d (encoder : %d)\n", HID_report[0], HID_report[1], HID_report[2], HID_report[3], prev_wheel);
 
   // Data Processing delay.
   HAL_Delay((uint32_t)(TIME_INTERVAL * 10));
 
   return 1;
-}
-
-void setSCALE_X(int val)
-{
-  SCALE_X += val;
-
-  if(SCALE_X > 400)
-    SCALE_X = 350;
-}
-
-void setSCALE_Y(int val)
-{
-  SCALE_Y += val;
-
-  if(SCALE_Y > 400)
-    SCALE_Y = 350;
 }
 

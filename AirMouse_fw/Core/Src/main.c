@@ -111,8 +111,6 @@ int main(void)
   cliOpen(CH_USART1, 11520);
   HAL_TIM_Encoder_Start(&htim3, TIM_CHANNEL_ALL);
 
-  uint32_t adc[2];
-
 
   while (1)
   {

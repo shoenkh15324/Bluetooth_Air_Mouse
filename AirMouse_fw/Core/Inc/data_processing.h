@@ -33,8 +33,7 @@ bool dataProcessing();
 
 int8_t calculateMouseX();
 int8_t calculateMouseY();
+int8_t calculateMouseWheel();
 
-void setSCALE_X(int val);
-void setSCALE_Y(int val);
 
 #endif /* INC_DATA_PROCESSING_H_ */

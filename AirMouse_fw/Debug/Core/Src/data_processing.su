@@ -2,7 +2,6 @@
 ../Core/Src/data_processing.c:33:6:filterInit	8	static
 ../Core/Src/data_processing.c:42:8:calculateMouseX	32	static
 ../Core/Src/data_processing.c:63:8:calculateMouseY	48	static
-../Core/Src/data_processing.c:86:6:readData	24	static
-../Core/Src/data_processing.c:99:6:dataProcessing	24	static
-../Core/Src/data_processing.c:150:6:setSCALE_X	16	static
-../Core/Src/data_processing.c:158:6:setSCALE_Y	16	static
+../Core/Src/data_processing.c:86:8:calculateMouseWheel	16	static
+../Core/Src/data_processing.c:121:6:readData	24	static
+../Core/Src/data_processing.c:132:6:dataProcessing	32	static
