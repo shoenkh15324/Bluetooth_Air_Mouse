@@ -15,7 +15,7 @@
 #include "usart.h"
 
 
-#define SLAVE_MAC_ADDR  "98D3,02,9684B7" // Slave Module MAC Address
+#define SLAVE_MAC_ADDR  "4006A058653E" // Slave Module MAC Address
 
 
 void sendATcommand(char *command);
