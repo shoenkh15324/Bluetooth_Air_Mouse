@@ -12,17 +12,21 @@
 #include <stdbool.h>
 #include <string.h>
 
+#include "cli.h"
 #include "mpu6050.h"
 #include "button.h"
 #include "kalman_filter.h"
 #include "complementary_filter.h"
+#include "tim.h"
 
 
-#define SCALE_X               100.0           // X-axis movement sensitivity coefficient
-#define SCALE_Y               100.0           // Y-axis movement sensitivity coefficient
+
 #define TIME_INTERVAL         0.1f            // Changed to seconds. (100ms)
 
 
+
+
+void dataProcessingInit();
 void filterInit();
 void readData();
 bool dataProcessing();
@@ -30,5 +34,7 @@ bool dataProcessing();
 int8_t calculateMouseX();
 int8_t calculateMouseY();
 
+void setSCALE_X(int val);
+void setSCALE_Y(int val);
 
 #endif /* INC_DATA_PROCESSING_H_ */

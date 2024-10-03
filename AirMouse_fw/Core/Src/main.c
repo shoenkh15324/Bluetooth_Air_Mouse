@@ -17,10 +17,10 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
-#include <data_processing.h>
 #include "main.h"
 #include "dma.h"
 #include "i2c.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
@@ -30,6 +30,7 @@
 #include "mpu6050.h"
 #include "button.h"
 #include "bluetooth.h"
+#include "data_processing.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -96,9 +97,11 @@ int main(void)
   MX_USART1_UART_Init();
   MX_I2C1_Init();
   MX_USART2_UART_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   cliInit();
   MPU6050_Init(0x06);
+  dataProcessingInit();
   buttonInit();
   bluetoothInit();
   /* USER CODE END 2 */
@@ -106,7 +109,9 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   cliOpen(CH_USART1, 11520);
+  HAL_TIM_Encoder_Start(&htim3, TIM_CHANNEL_ALL);
 
+  uint32_t adc[2];
 
 
   while (1)

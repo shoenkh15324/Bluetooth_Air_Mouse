@@ -1,3 +1,3 @@
-../Core/Src/bluetooth.c:16:6:sendATcommand	16	static
-../Core/Src/bluetooth.c:23:6:bluetoothInit	40	static
-../Core/Src/bluetooth.c:42:6:bluetoothReconnect	40	static
+../Core/Src/bluetooth.c:16:6:sendATcommand	120	static
+../Core/Src/bluetooth.c:24:6:bluetoothInit	40	static
+../Core/Src/bluetooth.c:39:6:bluetoothReconnect	40	static

@@ -16,6 +16,19 @@ KalmanFilter kf_z, kf_y;                      // Kalman Filter
 ComplementaryFilter cf_z, cf_y;               // Complementary Filter
 
 
+int SCALE_X = 350.0;           // X-axis movement sensitivity coefficient
+int SCALE_Y = 350.0;           // Y-axis movement sensitivity coefficient
+
+
+int16_t wheel_data = 0;
+
+
+void dataProcessingInit()
+{
+  // Initialize filters.
+  filterInit();
+}
+
 // Initialize kalman filter and complementary filter.
 void filterInit()
 {
@@ -80,13 +93,11 @@ void readData()
   buttonRead(RIGHT_BTN_GPIO_Port, RIGHT_BTN_Pin);
 
   // Read Mouse wheel data.
+  wheel_data = __HAL_TIM_GET_COUNTER(&htim3);
 }
 
 bool dataProcessing()
 {
-  // Initialize filters.
-  filterInit();
-
   // USB HID Data
   int8_t HID_report[4];
 
@@ -108,8 +119,13 @@ bool dataProcessing()
   // Mouse Right Button Clicked.
   else if(isButtonPressed(RIGHT_BTN_GPIO_Port, RIGHT_BTN_Pin))
   {
-    HID_report[0] = 0x02;
+    //HID_report[0] = 0x02;
+    setSCALE_X(50);
+    setSCALE_Y(50);
   }
+
+  // Mouse Wheel
+  HID_report[3] = wheel_data;
 
   // Data Transmit.
   HAL_UART_Transmit(&huart2, (uint8_t *)HID_report, sizeof(HID_report), 50);
@@ -126,7 +142,24 @@ bool dataProcessing()
   cliPrintf("%d %d %d %d\n", HID_report[0], HID_report[1], HID_report[2], HID_report[3]);
 
   // Data Processing delay.
-  HAL_Delay((uint32_t)(TIME_INTERVAL * 1000));
+  HAL_Delay((uint32_t)(TIME_INTERVAL * 10));
 
   return 1;
 }
+
+void setSCALE_X(int val)
+{
+  SCALE_X += val;
+
+  if(SCALE_X > 400)
+    SCALE_X = 350;
+}
+
+void setSCALE_Y(int val)
+{
+  SCALE_Y += val;
+
+  if(SCALE_Y > 400)
+    SCALE_Y = 350;
+}
+
