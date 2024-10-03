@@ -94,7 +94,7 @@ void cliButton(cli_args_t *args)
 
       if(str == 0x0D) break;
 
-      cliPrintf("%d %d\n", !HAL_GPIO_ReadPin(LEFT_BTN_GPIO_Port, LEFT_BTN_Pin), !HAL_GPIO_ReadPin(RIGHT_BTN_GPIO_Port, RIGHT_BTN_Pin));
+      cliPrintf("%d %d\n", HAL_GPIO_ReadPin(LEFT_BTN_GPIO_Port, LEFT_BTN_Pin), HAL_GPIO_ReadPin(RIGHT_BTN_GPIO_Port, RIGHT_BTN_Pin));
 
       HAL_Delay(50);
     }
