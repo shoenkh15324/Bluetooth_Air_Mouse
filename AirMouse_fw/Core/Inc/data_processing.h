@@ -18,12 +18,11 @@
 #include "kalman_filter.h"
 #include "complementary_filter.h"
 #include "tim.h"
+#include "encoder.h"
 
-
-#define SCALE_X               10.0            // X-axis movement sensitivity coefficient
-#define SCALE_Y               10.0            // Y-axis movement sensitivity coeffici
-#define TIME_INTERVAL         0.14f           // Yaw integration time-interval
-
+#define TIME_INTERVAL 0.02f // Yaw integration time-interval
+#define X_SENSITIVITY_WEIGHT 0.5
+#define Y_SENSITIVITY_WEIGHT 0.1
 
 void dataProcessingInit();
 void filterInit();
@@ -34,5 +33,9 @@ int8_t calculateMouseX();
 int8_t calculateMouseY();
 int8_t calculateMouseWheel();
 
+void increaseSensitivity();
+void decreaseSensitivity();
+
+void changeDPI();
 
 #endif /* INC_DATA_PROCESSING_H_ */

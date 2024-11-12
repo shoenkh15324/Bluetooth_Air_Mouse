@@ -28,7 +28,7 @@ Core/Src/data_processing.o: ../Core/Src/data_processing.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
  ../Core/Inc/mpu6050.h ../Core/Inc/button.h ../Core/Inc/gpio.h \
  ../Core/Inc/kalman_filter.h ../Core/Inc/complementary_filter.h \
- ../Core/Inc/tim.h
+ ../Core/Inc/tim.h ../Core/Inc/encoder.h
 ../Core/Inc/data_processing.h:
 ../Core/Inc/cli.h:
 ../Core/Inc/usart.h:
@@ -65,3 +65,4 @@ Core/Src/data_processing.o: ../Core/Src/data_processing.c \
 ../Core/Inc/kalman_filter.h:
 ../Core/Inc/complementary_filter.h:
 ../Core/Inc/tim.h:
+../Core/Inc/encoder.h:

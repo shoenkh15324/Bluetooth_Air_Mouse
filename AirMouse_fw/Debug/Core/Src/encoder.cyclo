@@ -1,0 +1,5 @@
+../Core/Src/encoder.c:9:6:encoderInit	1
+../Core/Src/encoder.c:14:6:readEncoderSwitch	4
+../Core/Src/encoder.c:31:6:getIsSwitch	1
+../Core/Src/encoder.c:36:6:setIsSwitchTrue	1
+../Core/Src/encoder.c:41:6:setIsSwitchFalse	1
