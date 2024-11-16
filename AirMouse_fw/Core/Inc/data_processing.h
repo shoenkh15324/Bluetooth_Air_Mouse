@@ -12,7 +12,6 @@
 #include <stdbool.h>
 #include <string.h>
 
-#include "cli.h"
 #include "mpu6050.h"
 #include "button.h"
 #include "kalman_filter.h"
@@ -21,8 +20,8 @@
 #include "encoder.h"
 
 #define TIME_INTERVAL 0.02f // Yaw integration time-interval
-#define X_SENSITIVITY_WEIGHT 0.5
-#define Y_SENSITIVITY_WEIGHT 0.1
+#define X_SENSITIVITY_WEIGHT 0.25
+#define Y_SENSITIVITY_WEIGHT 0.25
 
 void dataProcessingInit();
 void filterInit();

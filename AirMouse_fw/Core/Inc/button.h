@@ -9,7 +9,6 @@
 #define INC_BUTTON_H_
 
 #include "gpio.h"
-#include "cli.h"
 #include "usart.h"
 
 #define BUTTON_MAX_CH 2
@@ -28,6 +27,5 @@ typedef struct
 void buttonInit();
 uint8_t isButtonPressed(GPIO_TypeDef *port, uint32_t pin);
 void buttonRead(GPIO_TypeDef *port, uint32_t pin);
-void cliButton(cli_args_t *args);
 
 #endif /* INC_BUTTON_H_ */

@@ -18,8 +18,9 @@ int32_t prev_wheel = 0;
 
 float gy_bias = 0.0;
 
-float x_sensitivity = 10.0; // sensitivity coefficient
-float y_sensitivity = 10.0;
+// sensitivity coefficient
+float x_sensitivity = 8.0;
+float y_sensitivity = 5.0;
 
 void dataProcessingInit()
 {
@@ -57,34 +58,35 @@ int8_t calculateMouseX()
   return mouse_x;
 }
 
-// Y-axis movement can be obtained with roll.
+// Y-axis movement can be obtained with pitch.
 int8_t calculateMouseY()
 {
   // Read MPU6050 Datasheet.
   float ax = (float)raw_ax / 4096;
   float ay = (float)raw_ay / 4096;
-  float az = (float)raw_az / 4096;
-  float gy = ((float)raw_gy / 32.8) - gy_bias;
+  float az = ((float)raw_az / 4096) - 1;
+  float gx = ((float)raw_gx / 32.8);
 
   // Calculate roll (rad)
-  float roll = atan2f(ax, sqrtf(ay * ay + az * az));
-
-  static float roll_gyro = 0;
-  roll_gyro += gy * TIME_INTERVAL;
+  float roll = atan2f(ay, sqrtf(ax * ax + az * az));
 
   // Apply complementary filter
-  float c_filtered_roll = 0.98 * roll_gyro + 0.02 * roll;
+  float c_filtered_roll = ComplementaryFilter_Update(&cf_y, roll, gx, TIME_INTERVAL);
 
   // Apply kalman filter
   float k_filtered_roll = KalmanFilter_Update(&kf_y, c_filtered_roll);
 
   // Apply SENSITIVITY
-  int mouse_y = (int)(k_filtered_roll * y_sensitivity);
+  float mouse_y = k_filtered_roll * y_sensitivity * (-1);
 
-  if (abs(mouse_y) < 1.5)
-    mouse_y = 0;
+  float threshold_y = 0.4 * y_sensitivity;
 
-  return mouse_y;
+  if (mouse_y < threshold_y && mouse_y > 0)
+  {
+    mouse_y = 0.0;
+  }
+
+  return (int)mouse_y;
 }
 
 int8_t calculateMouseWheel()

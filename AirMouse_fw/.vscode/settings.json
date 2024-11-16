@@ -1,0 +1,32 @@
+{
+  "files.associations": {
+    "button.h": "c",
+    "data_processing.h": "c"
+  },
+  "taskExplorer.exclude": [
+    "**/.vscode-test/**",
+    "**/Assets/**",
+    "**/bin/**",
+    "**/build/**",
+    "**/dist/**",
+    "**/doc/**",
+    "**/example/**",
+    "**/examples/**",
+    "**/ext/**",
+    "**/obj/**",
+    "**/out/**",
+    "**/output/**",
+    "**/packages/**",
+    "**/release/**",
+    "**/releases/**",
+    "**/samples/**",
+    "**/sdks/**",
+    "**/static/**",
+    "**/target/**",
+    "**/test/**",
+    "**/third_party/**",
+    "**/vendor/**",
+    "**/work/**",
+    "/c:/Users/mok07/Desktop/Study/VanLab/VanLab_Project/Bluetooth_Air_Mouse/AirMouse_fw/Debug/makefile"
+  ]
+}

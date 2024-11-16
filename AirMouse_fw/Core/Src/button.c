@@ -5,12 +5,9 @@
  *      Author: mok07
  */
 
-
 #include "button.h"
 
-
-#define DEBOUNCE_DELAY    15
-
+#define DEBOUNCE_DELAY 15
 
 static uint8_t isLeftButtonPressed = 0;
 static uint8_t isRightButtonPressed = 0;
@@ -19,11 +16,8 @@ static uint8_t isRightButtonPressed = 0;
 static uint32_t lastDebounceTime_LEFT = 0;
 static uint32_t lastDebounceTime_RIGHT = 0;
 
-
 void buttonInit()
 {
-  // Registering 'button' command in CLI.
-  cliAdd("button", cliButton);
 }
 
 uint8_t isButtonPressed(GPIO_TypeDef *port, uint32_t pin)
@@ -77,33 +71,5 @@ void buttonRead(GPIO_TypeDef *port, uint32_t pin)
         }
       }
     }
-  }
-}
-
-void cliButton(cli_args_t *args)
-{
-  bool ret = false;
-
-  if(args->argc == 1 && args->isStr(0, "show"))
-  {
-    uint8_t str = 0;
-
-    while(cliKeepLoop())
-    {
-      str = uartRead(CH_USART1);
-
-      if(str == 0x0D) break;
-
-      cliPrintf("%d %d\n", HAL_GPIO_ReadPin(LEFT_BTN_GPIO_Port, LEFT_BTN_Pin), HAL_GPIO_ReadPin(RIGHT_BTN_GPIO_Port, RIGHT_BTN_Pin));
-
-      HAL_Delay(50);
-    }
-
-    ret = true;
-  }
-
-  if(ret != true)
-  {
-    cliPrintf("button show\n");
   }
 }

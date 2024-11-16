@@ -69,10 +69,6 @@ void Error_Handler(void);
 #define ENCODER_OTA_GPIO_Port GPIOA
 #define LED_Pin GPIO_PIN_12
 #define LED_GPIO_Port GPIOB
-#define UART_CLI_TX_Pin GPIO_PIN_9
-#define UART_CLI_TX_GPIO_Port GPIOA
-#define UART_CLI_RX_Pin GPIO_PIN_10
-#define UART_CLI_RX_GPIO_Port GPIOA
 #define RIGHT_BTN_Pin GPIO_PIN_3
 #define RIGHT_BTN_GPIO_Port GPIOB
 #define LEFT_BTN_Pin GPIO_PIN_4
