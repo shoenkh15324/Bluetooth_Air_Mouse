@@ -222,7 +222,7 @@ bool dataProcessing()
   HAL_UART_Transmit(&huart2, (uint8_t *)HID_report, sizeof(HID_report), 10);
 
   // Print HID_report data on cli terminal.
-  // cliPrintf("%d %d %d %d (encoder : %d)\n", HID_report[0], HID_report[1], HID_report[2], HID_report[3], prev_wheel);
+  // printf("%d %d %d %d (encoder : %d)\n", HID_report[0], HID_report[1], HID_report[2], HID_report[3], prev_wheel);
 
   return 1;
 }
