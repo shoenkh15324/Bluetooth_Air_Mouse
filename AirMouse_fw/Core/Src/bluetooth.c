@@ -15,10 +15,10 @@ uint8_t mac[] = SLAVE_MAC_ADDR;   // Slave Module MAC Address.
 
 void sendATcommand(char *command)
 {
-  uint8_t buf[100];                 // buffer for receive AT command response.
+  //uint8_t buf[100];                 // buffer for receive AT command response.
 
   HAL_UART_Transmit(&huart2, (uint8_t *)command, strlen(command), HAL_MAX_DELAY);
-  HAL_UART_Receive(&huart2, buf, sizeof(buf), 200);
+  //HAL_UART_Receive(&huart2, buf, sizeof(buf), 200);
 }
 
 void bluetoothInit()

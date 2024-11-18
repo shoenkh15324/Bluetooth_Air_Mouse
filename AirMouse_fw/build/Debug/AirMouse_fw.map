@@ -365,12 +365,12 @@ Discarded input sections
  .bss           0x00000000        0x0 CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
  .data.mac      0x00000000        0xd CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
  .text.sendATcommand
-                0x00000000       0x38 CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
+                0x00000000       0x2c CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
  .rodata        0x00000000       0x37 CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
  .text.bluetoothInit
                 0x00000000       0x80 CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
- .debug_info    0x00000000      0x6b3 CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
- .debug_abbrev  0x00000000      0x1f3 CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
+ .debug_info    0x00000000      0x66c CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
+ .debug_abbrev  0x00000000      0x1d9 CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
  .debug_aranges
                 0x00000000       0x28 CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
  .debug_rnglists
@@ -437,8 +437,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x242 CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
  .debug_macro   0x00000000       0x83 CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
  .debug_macro   0x00000000       0x64 CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
- .debug_line    0x00000000      0x905 CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
- .debug_str     0x00000000    0x8b269 CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
+ .debug_line    0x00000000      0x904 CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
+ .debug_str     0x00000000    0x8b258 CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
  .comment       0x00000000       0x44 CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
  .debug_frame   0x00000000       0x58 CMakeFiles/AirMouse_fw.dir/Core/Src/bluetooth.c.obj
  .ARM.attributes
@@ -5679,7 +5679,7 @@ LOAD C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x08000000                g_pfnVectors
                 0x0800010c                        . = ALIGN (0x4)
 
-.text           0x08000110     0xc08c
+.text           0x08000110     0xc0dc
                 0x08000110                        . = ALIGN (0x4)
  *(.text)
  .text          0x08000110       0x40 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
@@ -5777,836 +5777,836 @@ LOAD C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x08001198       0x58 CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
                 0x08001198                filterInit
  .text.calculateMouseX
-                0x080011f0       0x9c CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
+                0x080011f0       0xec CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
                 0x080011f0                calculateMouseX
- *fill*         0x0800128c        0x4 
+ *fill*         0x080012dc        0x4 
  .text.calculateMouseY
-                0x08001290      0x180 CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
-                0x08001290                calculateMouseY
+                0x080012e0      0x180 CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
+                0x080012e0                calculateMouseY
  .text.calculateMouseWheel
-                0x08001410       0x90 CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
-                0x08001410                calculateMouseWheel
+                0x08001460       0x90 CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
+                0x08001460                calculateMouseWheel
  .text.changeDPI
-                0x080014a0       0x8c CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
-                0x080014a0                changeDPI
+                0x080014f0       0x8c CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
+                0x080014f0                changeDPI
  .text.increaseSensitivity
-                0x0800152c       0x68 CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
-                0x0800152c                increaseSensitivity
+                0x0800157c       0x68 CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
+                0x0800157c                increaseSensitivity
  .text.decreaseSensitivity
-                0x08001594       0x68 CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
-                0x08001594                decreaseSensitivity
+                0x080015e4       0x68 CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
+                0x080015e4                decreaseSensitivity
  .text.readData
-                0x080015fc       0x60 CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
-                0x080015fc                readData
+                0x0800164c       0x60 CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
+                0x0800164c                readData
  .text.dataProcessing
-                0x0800165c       0xa0 CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
-                0x0800165c                dataProcessing
+                0x080016ac       0xa0 CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
+                0x080016ac                dataProcessing
  .text.MX_DMA_Init
-                0x080016fc       0x3c CMakeFiles/AirMouse_fw.dir/Core/Src/dma.c.obj
-                0x080016fc                MX_DMA_Init
+                0x0800174c       0x3c CMakeFiles/AirMouse_fw.dir/Core/Src/dma.c.obj
+                0x0800174c                MX_DMA_Init
  .text.encoderInit
-                0x08001738       0x14 CMakeFiles/AirMouse_fw.dir/Core/Src/encoder.c.obj
-                0x08001738                encoderInit
+                0x08001788       0x14 CMakeFiles/AirMouse_fw.dir/Core/Src/encoder.c.obj
+                0x08001788                encoderInit
  .text.readEncoderSwitch
-                0x0800174c       0x88 CMakeFiles/AirMouse_fw.dir/Core/Src/encoder.c.obj
-                0x0800174c                readEncoderSwitch
+                0x0800179c       0x88 CMakeFiles/AirMouse_fw.dir/Core/Src/encoder.c.obj
+                0x0800179c                readEncoderSwitch
  .text.getIsSwitch
-                0x080017d4       0x14 CMakeFiles/AirMouse_fw.dir/Core/Src/encoder.c.obj
-                0x080017d4                getIsSwitch
+                0x08001824       0x14 CMakeFiles/AirMouse_fw.dir/Core/Src/encoder.c.obj
+                0x08001824                getIsSwitch
  .text.setIsSwitchTrue
-                0x080017e8       0x18 CMakeFiles/AirMouse_fw.dir/Core/Src/encoder.c.obj
-                0x080017e8                setIsSwitchTrue
+                0x08001838       0x18 CMakeFiles/AirMouse_fw.dir/Core/Src/encoder.c.obj
+                0x08001838                setIsSwitchTrue
  .text.setIsSwitchFalse
-                0x08001800       0x18 CMakeFiles/AirMouse_fw.dir/Core/Src/encoder.c.obj
-                0x08001800                setIsSwitchFalse
+                0x08001850       0x18 CMakeFiles/AirMouse_fw.dir/Core/Src/encoder.c.obj
+                0x08001850                setIsSwitchFalse
  .text.MX_GPIO_Init
-                0x08001818       0xcc CMakeFiles/AirMouse_fw.dir/Core/Src/gpio.c.obj
-                0x08001818                MX_GPIO_Init
+                0x08001868       0xcc CMakeFiles/AirMouse_fw.dir/Core/Src/gpio.c.obj
+                0x08001868                MX_GPIO_Init
  .text.MX_I2C1_Init
-                0x080018e4       0x5c CMakeFiles/AirMouse_fw.dir/Core/Src/i2c.c.obj
-                0x080018e4                MX_I2C1_Init
+                0x08001934       0x5c CMakeFiles/AirMouse_fw.dir/Core/Src/i2c.c.obj
+                0x08001934                MX_I2C1_Init
  .text.HAL_I2C_MspInit
-                0x08001940       0x7c CMakeFiles/AirMouse_fw.dir/Core/Src/i2c.c.obj
-                0x08001940                HAL_I2C_MspInit
+                0x08001990       0x7c CMakeFiles/AirMouse_fw.dir/Core/Src/i2c.c.obj
+                0x08001990                HAL_I2C_MspInit
  .text.KalmanFilter_Init
-                0x080019bc       0x3a CMakeFiles/AirMouse_fw.dir/Core/Src/kalman_filter.c.obj
-                0x080019bc                KalmanFilter_Init
+                0x08001a0c       0x3a CMakeFiles/AirMouse_fw.dir/Core/Src/kalman_filter.c.obj
+                0x08001a0c                KalmanFilter_Init
  .text.KalmanFilter_Update
-                0x080019f6       0xa8 CMakeFiles/AirMouse_fw.dir/Core/Src/kalman_filter.c.obj
-                0x080019f6                KalmanFilter_Update
- .text.main     0x08001a9e       0x42 CMakeFiles/AirMouse_fw.dir/Core/Src/main.c.obj
-                0x08001a9e                main
+                0x08001a46       0xa8 CMakeFiles/AirMouse_fw.dir/Core/Src/kalman_filter.c.obj
+                0x08001a46                KalmanFilter_Update
+ .text.main     0x08001aee       0x42 CMakeFiles/AirMouse_fw.dir/Core/Src/main.c.obj
+                0x08001aee                main
  .text.SystemClock_Config
-                0x08001ae0       0xb4 CMakeFiles/AirMouse_fw.dir/Core/Src/main.c.obj
-                0x08001ae0                SystemClock_Config
+                0x08001b30       0xb4 CMakeFiles/AirMouse_fw.dir/Core/Src/main.c.obj
+                0x08001b30                SystemClock_Config
  .text.Error_Handler
-                0x08001b94        0xc CMakeFiles/AirMouse_fw.dir/Core/Src/main.c.obj
-                0x08001b94                Error_Handler
+                0x08001be4        0xc CMakeFiles/AirMouse_fw.dir/Core/Src/main.c.obj
+                0x08001be4                Error_Handler
  .text.MPU6050_ReadOneByte
-                0x08001ba0       0x3c CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
-                0x08001ba0                MPU6050_ReadOneByte
+                0x08001bf0       0x3c CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
+                0x08001bf0                MPU6050_ReadOneByte
  .text.MPU6050_WriteOneByte
-                0x08001bdc       0x38 CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
-                0x08001bdc                MPU6050_WriteOneByte
+                0x08001c2c       0x38 CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
+                0x08001c2c                MPU6050_WriteOneByte
  .text.MPU6050_WriteBits
-                0x08001c14       0x92 CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
-                0x08001c14                MPU6050_WriteBits
+                0x08001c64       0x92 CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
+                0x08001c64                MPU6050_WriteBits
  .text.MPU6050_WriteOneBit
-                0x08001ca6       0x6a CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
-                0x08001ca6                MPU6050_WriteOneBit
+                0x08001cf6       0x6a CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
+                0x08001cf6                MPU6050_WriteOneBit
  .text.MPU6050_ReadBuff
-                0x08001d10       0x48 CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
-                0x08001d10                MPU6050_ReadBuff
+                0x08001d60       0x48 CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
+                0x08001d60                MPU6050_ReadBuff
  .text.MPU6050_SetClockSource
-                0x08001d58       0x1e CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
-                0x08001d58                MPU6050_SetClockSource
+                0x08001da8       0x1e CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
+                0x08001da8                MPU6050_SetClockSource
  .text.MPU6050_SetFullScaleGyroRange
-                0x08001d76       0x1e CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
-                0x08001d76                MPU6050_SetFullScaleGyroRange
+                0x08001dc6       0x1e CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
+                0x08001dc6                MPU6050_SetFullScaleGyroRange
  .text.MPU6050_SetLPF
-                0x08001d94       0x1c CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
-                0x08001d94                MPU6050_SetLPF
+                0x08001de4       0x1c CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
+                0x08001de4                MPU6050_SetLPF
  .text.MPU6050_SetFullScaleAccelRange
-                0x08001db0       0x1e CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
-                0x08001db0                MPU6050_SetFullScaleAccelRange
+                0x08001e00       0x1e CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
+                0x08001e00                MPU6050_SetFullScaleAccelRange
  .text.MPU6050_SetSleepEnabled
-                0x08001dce       0x1e CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
-                0x08001dce                MPU6050_SetSleepEnabled
+                0x08001e1e       0x1e CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
+                0x08001e1e                MPU6050_SetSleepEnabled
  .text.MPU6050_SetI2CMasterModeEnabled
-                0x08001dec       0x1e CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
-                0x08001dec                MPU6050_SetI2CMasterModeEnabled
+                0x08001e3c       0x1e CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
+                0x08001e3c                MPU6050_SetI2CMasterModeEnabled
  .text.MPU6050_SetI2CBypassEnabled
-                0x08001e0a       0x1e CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
-                0x08001e0a                MPU6050_SetI2CBypassEnabled
+                0x08001e5a       0x1e CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
+                0x08001e5a                MPU6050_SetI2CBypassEnabled
  .text.MPU6050_GetData
-                0x08001e28      0x184 CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
-                0x08001e28                MPU6050_GetData
+                0x08001e78      0x184 CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
+                0x08001e78                MPU6050_GetData
  .text.MPU6050_Init
-                0x08001fac       0x76 CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
-                0x08001fac                MPU6050_Init
- *fill*         0x08002022        0x2 
+                0x08001ffc       0x76 CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
+                0x08001ffc                MPU6050_Init
+ *fill*         0x08002072        0x2 
  .text.HAL_MspInit
-                0x08002024       0x64 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_hal_msp.c.obj
-                0x08002024                HAL_MspInit
+                0x08002074       0x64 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x08002074                HAL_MspInit
  .text.NMI_Handler
-                0x08002088        0x8 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08002088                NMI_Handler
+                0x080020d8        0x8 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
+                0x080020d8                NMI_Handler
  .text.HardFault_Handler
-                0x08002090        0x8 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08002090                HardFault_Handler
+                0x080020e0        0x8 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
+                0x080020e0                HardFault_Handler
  .text.MemManage_Handler
-                0x08002098        0x8 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08002098                MemManage_Handler
+                0x080020e8        0x8 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
+                0x080020e8                MemManage_Handler
  .text.BusFault_Handler
-                0x080020a0        0x8 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080020a0                BusFault_Handler
+                0x080020f0        0x8 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
+                0x080020f0                BusFault_Handler
  .text.UsageFault_Handler
-                0x080020a8        0x8 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080020a8                UsageFault_Handler
+                0x080020f8        0x8 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
+                0x080020f8                UsageFault_Handler
  .text.SVC_Handler
-                0x080020b0        0xc CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080020b0                SVC_Handler
+                0x08002100        0xc CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08002100                SVC_Handler
  .text.DebugMon_Handler
-                0x080020bc        0xc CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080020bc                DebugMon_Handler
+                0x0800210c        0xc CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
+                0x0800210c                DebugMon_Handler
  .text.PendSV_Handler
-                0x080020c8        0xc CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080020c8                PendSV_Handler
+                0x08002118        0xc CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08002118                PendSV_Handler
  .text.SysTick_Handler
-                0x080020d4        0xc CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080020d4                SysTick_Handler
+                0x08002124        0xc CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08002124                SysTick_Handler
  .text.DMA1_Channel6_IRQHandler
-                0x080020e0       0x14 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080020e0                DMA1_Channel6_IRQHandler
+                0x08002130       0x14 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08002130                DMA1_Channel6_IRQHandler
  .text.USB_LP_CAN1_RX0_IRQHandler
-                0x080020f4       0x14 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080020f4                USB_LP_CAN1_RX0_IRQHandler
+                0x08002144       0x14 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08002144                USB_LP_CAN1_RX0_IRQHandler
  .text.TIM3_IRQHandler
-                0x08002108       0x14 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08002108                TIM3_IRQHandler
+                0x08002158       0x14 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08002158                TIM3_IRQHandler
  .text.USART2_IRQHandler
-                0x0800211c       0x14 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
-                0x0800211c                USART2_IRQHandler
+                0x0800216c       0x14 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
+                0x0800216c                USART2_IRQHandler
  .text.SystemInit
-                0x08002130        0xc CMakeFiles/AirMouse_fw.dir/Core/Src/system_stm32f1xx.c.obj
-                0x08002130                SystemInit
+                0x08002180        0xc CMakeFiles/AirMouse_fw.dir/Core/Src/system_stm32f1xx.c.obj
+                0x08002180                SystemInit
  .text.MX_TIM3_Init
-                0x0800213c       0xa8 CMakeFiles/AirMouse_fw.dir/Core/Src/tim.c.obj
-                0x0800213c                MX_TIM3_Init
+                0x0800218c       0xa8 CMakeFiles/AirMouse_fw.dir/Core/Src/tim.c.obj
+                0x0800218c                MX_TIM3_Init
  .text.HAL_TIM_Encoder_MspInit
-                0x080021e4       0x8c CMakeFiles/AirMouse_fw.dir/Core/Src/tim.c.obj
-                0x080021e4                HAL_TIM_Encoder_MspInit
+                0x08002234       0x8c CMakeFiles/AirMouse_fw.dir/Core/Src/tim.c.obj
+                0x08002234                HAL_TIM_Encoder_MspInit
  .text.MX_USART2_UART_Init
-                0x08002270       0x54 CMakeFiles/AirMouse_fw.dir/Core/Src/usart.c.obj
-                0x08002270                MX_USART2_UART_Init
+                0x080022c0       0x54 CMakeFiles/AirMouse_fw.dir/Core/Src/usart.c.obj
+                0x080022c0                MX_USART2_UART_Init
  .text.HAL_UART_MspInit
-                0x080022c4       0xf8 CMakeFiles/AirMouse_fw.dir/Core/Src/usart.c.obj
-                0x080022c4                HAL_UART_MspInit
+                0x08002314       0xf8 CMakeFiles/AirMouse_fw.dir/Core/Src/usart.c.obj
+                0x08002314                HAL_UART_MspInit
  .text.MX_USB_DEVICE_Init
-                0x080023bc       0x60 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usb_device.c.obj
-                0x080023bc                MX_USB_DEVICE_Init
+                0x0800240c       0x60 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usb_device.c.obj
+                0x0800240c                MX_USB_DEVICE_Init
  .text.USBD_FS_DeviceDescriptor
-                0x0800241c       0x24 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x0800241c                USBD_FS_DeviceDescriptor
+                0x0800246c       0x24 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x0800246c                USBD_FS_DeviceDescriptor
  .text.USBD_FS_LangIDStrDescriptor
-                0x08002440       0x24 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x08002440                USBD_FS_LangIDStrDescriptor
+                0x08002490       0x24 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x08002490                USBD_FS_LangIDStrDescriptor
  .text.USBD_FS_ProductStrDescriptor
-                0x08002464       0x3c CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x08002464                USBD_FS_ProductStrDescriptor
+                0x080024b4       0x3c CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x080024b4                USBD_FS_ProductStrDescriptor
  .text.USBD_FS_ManufacturerStrDescriptor
-                0x080024a0       0x28 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x080024a0                USBD_FS_ManufacturerStrDescriptor
+                0x080024f0       0x28 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x080024f0                USBD_FS_ManufacturerStrDescriptor
  .text.USBD_FS_SerialStrDescriptor
-                0x080024c8       0x24 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x080024c8                USBD_FS_SerialStrDescriptor
+                0x08002518       0x24 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x08002518                USBD_FS_SerialStrDescriptor
  .text.USBD_FS_ConfigStrDescriptor
-                0x080024ec       0x3c CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x080024ec                USBD_FS_ConfigStrDescriptor
+                0x0800253c       0x3c CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x0800253c                USBD_FS_ConfigStrDescriptor
  .text.USBD_FS_InterfaceStrDescriptor
-                0x08002528       0x3c CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x08002528                USBD_FS_InterfaceStrDescriptor
+                0x08002578       0x3c CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x08002578                USBD_FS_InterfaceStrDescriptor
  .text.Get_SerialNum
-                0x08002564       0x58 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x080025b4       0x58 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
  .text.IntToUnicode
-                0x080025bc       0x7c CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x0800260c       0x7c CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
  .text.CDC_Init_FS
-                0x08002638       0x28 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+                0x08002688       0x28 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
  .text.CDC_DeInit_FS
-                0x08002660        0xe CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
- *fill*         0x0800266e        0x2 
+                0x080026b0        0xe CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+ *fill*         0x080026be        0x2 
  .text.CDC_Control_FS
-                0x08002670       0xbc CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+                0x080026c0       0xbc CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
  .text.CDC_Receive_FS
-                0x0800272c       0x28 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+                0x0800277c       0x28 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
  .text.HAL_PCD_MspInit
-                0x08002754       0x4c CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08002754                HAL_PCD_MspInit
+                0x080027a4       0x4c CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x080027a4                HAL_PCD_MspInit
  .text.HAL_PCD_SetupStageCallback
-                0x080027a0       0x24 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x080027a0                HAL_PCD_SetupStageCallback
+                0x080027f0       0x24 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x080027f0                HAL_PCD_SetupStageCallback
  .text.HAL_PCD_DataOutStageCallback
-                0x080027c4       0x36 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x080027c4                HAL_PCD_DataOutStageCallback
+                0x08002814       0x36 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08002814                HAL_PCD_DataOutStageCallback
  .text.HAL_PCD_DataInStageCallback
-                0x080027fa       0x34 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x080027fa                HAL_PCD_DataInStageCallback
+                0x0800284a       0x34 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x0800284a                HAL_PCD_DataInStageCallback
  .text.HAL_PCD_SOFCallback
-                0x0800282e       0x1c CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x0800282e                HAL_PCD_SOFCallback
+                0x0800287e       0x1c CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x0800287e                HAL_PCD_SOFCallback
  .text.HAL_PCD_ResetCallback
-                0x0800284a       0x3c CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x0800284a                HAL_PCD_ResetCallback
- *fill*         0x08002886        0x2 
+                0x0800289a       0x3c CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x0800289a                HAL_PCD_ResetCallback
+ *fill*         0x080028d6        0x2 
  .text.HAL_PCD_SuspendCallback
-                0x08002888       0x34 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08002888                HAL_PCD_SuspendCallback
+                0x080028d8       0x34 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x080028d8                HAL_PCD_SuspendCallback
  .text.HAL_PCD_ResumeCallback
-                0x080028bc       0x1c CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x080028bc                HAL_PCD_ResumeCallback
+                0x0800290c       0x1c CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x0800290c                HAL_PCD_ResumeCallback
  .text.USBD_LL_Init
-                0x080028d8       0xb4 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x080028d8                USBD_LL_Init
+                0x08002928       0xb4 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08002928                USBD_LL_Init
  .text.USBD_LL_Start
-                0x0800298c       0x36 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x0800298c                USBD_LL_Start
+                0x080029dc       0x36 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x080029dc                USBD_LL_Start
  .text.USBD_LL_OpenEP
-                0x080029c2       0x4c CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x080029c2                USBD_LL_OpenEP
+                0x08002a12       0x4c CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08002a12                USBD_LL_OpenEP
  .text.USBD_LL_CloseEP
-                0x08002a0e       0x3e CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08002a0e                USBD_LL_CloseEP
+                0x08002a5e       0x3e CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08002a5e                USBD_LL_CloseEP
  .text.USBD_LL_StallEP
-                0x08002a4c       0x3e CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08002a4c                USBD_LL_StallEP
+                0x08002a9c       0x3e CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08002a9c                USBD_LL_StallEP
  .text.USBD_LL_ClearStallEP
-                0x08002a8a       0x3e CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08002a8a                USBD_LL_ClearStallEP
+                0x08002ada       0x3e CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08002ada                USBD_LL_ClearStallEP
  .text.USBD_LL_IsStallEP
-                0x08002ac8       0x56 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08002ac8                USBD_LL_IsStallEP
+                0x08002b18       0x56 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08002b18                USBD_LL_IsStallEP
  .text.USBD_LL_SetUSBAddress
-                0x08002b1e       0x3e CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08002b1e                USBD_LL_SetUSBAddress
+                0x08002b6e       0x3e CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08002b6e                USBD_LL_SetUSBAddress
  .text.USBD_LL_Transmit
-                0x08002b5c       0x46 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08002b5c                USBD_LL_Transmit
+                0x08002bac       0x46 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08002bac                USBD_LL_Transmit
  .text.USBD_LL_PrepareReceive
-                0x08002ba2       0x46 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08002ba2                USBD_LL_PrepareReceive
+                0x08002bf2       0x46 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08002bf2                USBD_LL_PrepareReceive
  .text.USBD_LL_GetRxDataSize
-                0x08002be8       0x26 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08002be8                USBD_LL_GetRxDataSize
- *fill*         0x08002c0e        0x2 
+                0x08002c38       0x26 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08002c38                USBD_LL_GetRxDataSize
+ *fill*         0x08002c5e        0x2 
  .text.USBD_static_malloc
-                0x08002c10       0x18 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08002c10                USBD_static_malloc
+                0x08002c60       0x18 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08002c60                USBD_static_malloc
  .text.USBD_static_free
-                0x08002c28       0x12 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08002c28                USBD_static_free
+                0x08002c78       0x12 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08002c78                USBD_static_free
  .text.HAL_PCDEx_SetConnectionState
-                0x08002c3a       0x16 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08002c3a                HAL_PCDEx_SetConnectionState
+                0x08002c8a       0x16 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08002c8a                HAL_PCDEx_SetConnectionState
  .text.USBD_Get_USB_Status
-                0x08002c50       0x58 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08002ca0       0x58 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
  .text.HAL_PCD_Init
-                0x08002ca8      0x1ec CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
-                0x08002ca8                HAL_PCD_Init
+                0x08002cf8      0x1ec CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
+                0x08002cf8                HAL_PCD_Init
  .text.HAL_PCD_Start
-                0x08002e94       0x4c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
-                0x08002e94                HAL_PCD_Start
+                0x08002ee4       0x4c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
+                0x08002ee4                HAL_PCD_Start
  .text.HAL_PCD_IRQHandler
-                0x08002ee0      0x260 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
-                0x08002ee0                HAL_PCD_IRQHandler
+                0x08002f30      0x260 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
+                0x08002f30                HAL_PCD_IRQHandler
  .text.HAL_PCD_SetAddress
-                0x08003140       0x48 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
-                0x08003140                HAL_PCD_SetAddress
+                0x08003190       0x48 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
+                0x08003190                HAL_PCD_SetAddress
  .text.HAL_PCD_EP_Open
-                0x08003188       0xba CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
-                0x08003188                HAL_PCD_EP_Open
+                0x080031d8       0xba CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
+                0x080031d8                HAL_PCD_EP_Open
  .text.HAL_PCD_EP_Close
-                0x08003242       0x90 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
-                0x08003242                HAL_PCD_EP_Close
+                0x08003292       0x90 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
+                0x08003292                HAL_PCD_EP_Close
  .text.HAL_PCD_EP_Receive
-                0x080032d2       0x62 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
-                0x080032d2                HAL_PCD_EP_Receive
+                0x08003322       0x62 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
+                0x08003322                HAL_PCD_EP_Receive
  .text.HAL_PCD_EP_GetRxCount
-                0x08003334       0x2e CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
-                0x08003334                HAL_PCD_EP_GetRxCount
+                0x08003384       0x2e CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
+                0x08003384                HAL_PCD_EP_GetRxCount
  .text.HAL_PCD_EP_Transmit
-                0x08003362       0x6e CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
-                0x08003362                HAL_PCD_EP_Transmit
+                0x080033b2       0x6e CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
+                0x080033b2                HAL_PCD_EP_Transmit
  .text.HAL_PCD_EP_SetStall
-                0x080033d0       0xc0 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
-                0x080033d0                HAL_PCD_EP_SetStall
+                0x08003420       0xc0 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
+                0x08003420                HAL_PCD_EP_SetStall
  .text.HAL_PCD_EP_ClrStall
-                0x08003490       0xa8 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
-                0x08003490                HAL_PCD_EP_ClrStall
+                0x080034e0       0xa8 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
+                0x080034e0                HAL_PCD_EP_ClrStall
  .text.PCD_EP_ISR_Handler
-                0x08003538      0x79e CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
+                0x08003588      0x79e CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
  .text.HAL_PCD_EP_DB_Receive
-                0x08003cd6      0x21a CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
+                0x08003d26      0x21a CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
  .text.HAL_PCD_EP_DB_Transmit
-                0x08003ef0      0x7f4 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
+                0x08003f40      0x7f4 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
  .text.HAL_PCDEx_PMAConfig
-                0x080046e4       0x84 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj
-                0x080046e4                HAL_PCDEx_PMAConfig
+                0x08004734       0x84 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj
+                0x08004734                HAL_PCDEx_PMAConfig
  .text.USB_CoreInit
-                0x08004768       0x1a CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
-                0x08004768                USB_CoreInit
+                0x080047b8       0x1a CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+                0x080047b8                USB_CoreInit
  .text.USB_EnableGlobalInt
-                0x08004782       0x2c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
-                0x08004782                USB_EnableGlobalInt
+                0x080047d2       0x2c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+                0x080047d2                USB_EnableGlobalInt
  .text.USB_DisableGlobalInt
-                0x080047ae       0x34 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
-                0x080047ae                USB_DisableGlobalInt
+                0x080047fe       0x34 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+                0x080047fe                USB_DisableGlobalInt
  .text.USB_SetCurrentMode
-                0x080047e2       0x18 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
-                0x080047e2                USB_SetCurrentMode
+                0x08004832       0x18 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+                0x08004832                USB_SetCurrentMode
  .text.USB_DevInit
-                0x080047fa       0x3a CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
-                0x080047fa                USB_DevInit
+                0x0800484a       0x3a CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+                0x0800484a                USB_DevInit
  .text.USB_ActivateEndpoint
-                0x08004834      0x780 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
-                0x08004834                USB_ActivateEndpoint
+                0x08004884      0x780 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+                0x08004884                USB_ActivateEndpoint
  .text.USB_DeactivateEndpoint
-                0x08004fb4      0x3d8 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
-                0x08004fb4                USB_DeactivateEndpoint
+                0x08005004      0x3d8 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+                0x08005004                USB_DeactivateEndpoint
  .text.USB_EPStartXfer
-                0x0800538c     0x1762 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
-                0x0800538c                USB_EPStartXfer
+                0x080053dc     0x1762 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+                0x080053dc                USB_EPStartXfer
  .text.USB_EPSetStall
-                0x08006aee       0xa0 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
-                0x08006aee                USB_EPSetStall
+                0x08006b3e       0xa0 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+                0x08006b3e                USB_EPSetStall
  .text.USB_EPClearStall
-                0x08006b8e      0x15a CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
-                0x08006b8e                USB_EPClearStall
+                0x08006bde      0x15a CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+                0x08006bde                USB_EPClearStall
  .text.USB_SetDevAddress
-                0x08006ce8       0x26 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
-                0x08006ce8                USB_SetDevAddress
+                0x08006d38       0x26 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+                0x08006d38                USB_SetDevAddress
  .text.USB_DevConnect
-                0x08006d0e       0x14 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
-                0x08006d0e                USB_DevConnect
+                0x08006d5e       0x14 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+                0x08006d5e                USB_DevConnect
  .text.USB_DevDisconnect
-                0x08006d22       0x14 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
-                0x08006d22                USB_DevDisconnect
+                0x08006d72       0x14 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+                0x08006d72                USB_DevDisconnect
  .text.USB_ReadInterrupts
-                0x08006d36       0x1e CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
-                0x08006d36                USB_ReadInterrupts
+                0x08006d86       0x1e CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+                0x08006d86                USB_ReadInterrupts
  .text.USB_EP0_OutStart
-                0x08006d54       0x16 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
-                0x08006d54                USB_EP0_OutStart
+                0x08006da4       0x16 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+                0x08006da4                USB_EP0_OutStart
  .text.USB_WritePMA
-                0x08006d6a       0x8a CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
-                0x08006d6a                USB_WritePMA
+                0x08006dba       0x8a CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+                0x08006dba                USB_WritePMA
  .text.USB_ReadPMA
-                0x08006df4       0x9e CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
-                0x08006df4                USB_ReadPMA
- *fill*         0x08006e92        0x2 
+                0x08006e44       0x9e CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+                0x08006e44                USB_ReadPMA
+ *fill*         0x08006ee2        0x2 
  .text.HAL_Init
-                0x08006e94       0x2c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08006e94                HAL_Init
+                0x08006ee4       0x2c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08006ee4                HAL_Init
  .text.HAL_InitTick
-                0x08006ec0       0x60 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08006ec0                HAL_InitTick
+                0x08006f10       0x60 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08006f10                HAL_InitTick
  .text.HAL_IncTick
-                0x08006f20       0x24 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08006f20                HAL_IncTick
+                0x08006f70       0x24 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08006f70                HAL_IncTick
  .text.HAL_GetTick
-                0x08006f44       0x14 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08006f44                HAL_GetTick
+                0x08006f94       0x14 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08006f94                HAL_GetTick
  .text.HAL_Delay
-                0x08006f58       0x48 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08006f58                HAL_Delay
+                0x08006fa8       0x48 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08006fa8                HAL_Delay
  .text.HAL_RCC_OscConfig
-                0x08006fa0      0x504 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08006fa0                HAL_RCC_OscConfig
+                0x08006ff0      0x504 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08006ff0                HAL_RCC_OscConfig
  .text.HAL_RCC_ClockConfig
-                0x080074a4      0x1d4 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x080074a4                HAL_RCC_ClockConfig
+                0x080074f4      0x1d4 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x080074f4                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x08007678       0xa8 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08007678                HAL_RCC_GetSysClockFreq
+                0x080076c8       0xa8 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x080076c8                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_GetHCLKFreq
-                0x08007720       0x14 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08007720                HAL_RCC_GetHCLKFreq
+                0x08007770       0x14 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08007770                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x08007734       0x28 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08007734                HAL_RCC_GetPCLK1Freq
+                0x08007784       0x28 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08007784                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x0800775c       0x28 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x0800775c                HAL_RCC_GetPCLK2Freq
+                0x080077ac       0x28 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x080077ac                HAL_RCC_GetPCLK2Freq
  .text.RCC_Delay
-                0x08007784       0x3c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x080077d4       0x3c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .text.HAL_RCCEx_PeriphCLKConfig
-                0x080077c0      0x16c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
-                0x080077c0                HAL_RCCEx_PeriphCLKConfig
+                0x08007810      0x16c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
+                0x08007810                HAL_RCCEx_PeriphCLKConfig
  .text.HAL_GPIO_Init
-                0x0800792c      0x308 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x0800792c                HAL_GPIO_Init
+                0x0800797c      0x308 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x0800797c                HAL_GPIO_Init
  .text.HAL_GPIO_ReadPin
-                0x08007c34       0x2e CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08007c34                HAL_GPIO_ReadPin
+                0x08007c84       0x2e CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x08007c84                HAL_GPIO_ReadPin
  .text.HAL_GPIO_WritePin
-                0x08007c62       0x30 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08007c62                HAL_GPIO_WritePin
- *fill*         0x08007c92        0x2 
+                0x08007cb2       0x30 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x08007cb2                HAL_GPIO_WritePin
+ *fill*         0x08007ce2        0x2 
  .text.HAL_DMA_Init
-                0x08007c94       0xb4 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
-                0x08007c94                HAL_DMA_Init
+                0x08007ce4       0xb4 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x08007ce4                HAL_DMA_Init
  .text.HAL_DMA_Abort
-                0x08007d48       0x76 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
-                0x08007d48                HAL_DMA_Abort
- *fill*         0x08007dbe        0x2 
+                0x08007d98       0x76 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x08007d98                HAL_DMA_Abort
+ *fill*         0x08007e0e        0x2 
  .text.HAL_DMA_Abort_IT
-                0x08007dc0       0xf0 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
-                0x08007dc0                HAL_DMA_Abort_IT
+                0x08007e10       0xf0 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x08007e10                HAL_DMA_Abort_IT
  .text.HAL_DMA_IRQHandler
-                0x08007eb0      0x20c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
-                0x08007eb0                HAL_DMA_IRQHandler
+                0x08007f00      0x20c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x08007f00                HAL_DMA_IRQHandler
  .text.__NVIC_SetPriorityGrouping
-                0x080080bc       0x48 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x0800810c       0x48 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.__NVIC_GetPriorityGrouping
-                0x08008104       0x1c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08008154       0x1c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.__NVIC_EnableIRQ
-                0x08008120       0x38 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08008170       0x38 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.__NVIC_SetPriority
-                0x08008158       0x54 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x080081a8       0x54 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.NVIC_EncodePriority
-                0x080081ac       0x64 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x080081fc       0x64 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.SysTick_Config
-                0x08008210       0x44 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08008260       0x44 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.HAL_NVIC_SetPriorityGrouping
-                0x08008254       0x16 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x08008254                HAL_NVIC_SetPriorityGrouping
+                0x080082a4       0x16 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x080082a4                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x0800826a       0x38 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x0800826a                HAL_NVIC_SetPriority
+                0x080082ba       0x38 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x080082ba                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x080082a2       0x1c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x080082a2                HAL_NVIC_EnableIRQ
+                0x080082f2       0x1c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x080082f2                HAL_NVIC_EnableIRQ
  .text.HAL_SYSTICK_Config
-                0x080082be       0x18 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x080082be                HAL_SYSTICK_Config
- *fill*         0x080082d6        0x2 
+                0x0800830e       0x18 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x0800830e                HAL_SYSTICK_Config
+ *fill*         0x08008326        0x2 
  .text.HAL_I2C_Init
-                0x080082d8      0x288 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
-                0x080082d8                HAL_I2C_Init
+                0x08008328      0x288 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08008328                HAL_I2C_Init
  .text.HAL_I2C_Mem_Write
-                0x08008560      0x1f4 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
-                0x08008560                HAL_I2C_Mem_Write
+                0x080085b0      0x1f4 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x080085b0                HAL_I2C_Mem_Write
  .text.HAL_I2C_Mem_Read
-                0x08008754      0x4e8 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
-                0x08008754                HAL_I2C_Mem_Read
+                0x080087a4      0x4e8 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x080087a4                HAL_I2C_Mem_Read
  .text.I2C_RequestMemoryWrite
-                0x08008c3c      0x12c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08008c8c      0x12c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_RequestMemoryRead
-                0x08008d68      0x1d0 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08008db8      0x1d0 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_WaitOnFlagUntilTimeout
-                0x08008f38       0xf4 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08008f88       0xf4 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_WaitOnMasterAddressFlagUntilTimeout
-                0x0800902c      0x140 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x0800907c      0x140 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_WaitOnTXEFlagUntilTimeout
-                0x0800916c       0x90 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x080091bc       0x90 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_WaitOnBTFFlagUntilTimeout
-                0x080091fc       0x90 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x0800924c       0x90 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_WaitOnRXNEFlagUntilTimeout
-                0x0800928c       0xba CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x080092dc       0xba CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_IsAcknowledgeFailed
-                0x08009346       0x5c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08009396       0x5c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.HAL_TIM_Encoder_Init
-                0x080093a2      0x144 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080093a2                HAL_TIM_Encoder_Init
+                0x080093f2      0x144 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080093f2                HAL_TIM_Encoder_Init
  .text.HAL_TIM_Encoder_Start
-                0x080094e6      0x11c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080094e6                HAL_TIM_Encoder_Start
+                0x08009536      0x11c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08009536                HAL_TIM_Encoder_Start
  .text.HAL_TIM_IRQHandler
-                0x08009602      0x1e0 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08009602                HAL_TIM_IRQHandler
+                0x08009652      0x1e0 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08009652                HAL_TIM_IRQHandler
  .text.HAL_TIM_PeriodElapsedCallback
-                0x080097e2       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080097e2                HAL_TIM_PeriodElapsedCallback
+                0x08009832       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08009832                HAL_TIM_PeriodElapsedCallback
  .text.HAL_TIM_OC_DelayElapsedCallback
-                0x080097f4       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080097f4                HAL_TIM_OC_DelayElapsedCallback
+                0x08009844       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08009844                HAL_TIM_OC_DelayElapsedCallback
  .text.HAL_TIM_IC_CaptureCallback
-                0x08009806       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08009806                HAL_TIM_IC_CaptureCallback
+                0x08009856       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08009856                HAL_TIM_IC_CaptureCallback
  .text.HAL_TIM_PWM_PulseFinishedCallback
-                0x08009818       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08009818                HAL_TIM_PWM_PulseFinishedCallback
+                0x08009868       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08009868                HAL_TIM_PWM_PulseFinishedCallback
  .text.HAL_TIM_TriggerCallback
-                0x0800982a       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x0800982a                HAL_TIM_TriggerCallback
+                0x0800987a       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800987a                HAL_TIM_TriggerCallback
  .text.TIM_Base_SetConfig
-                0x0800983c       0xdc CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x0800983c                TIM_Base_SetConfig
+                0x0800988c       0xdc CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800988c                TIM_Base_SetConfig
  .text.TIM_CCxChannelCmd
-                0x08009918       0x48 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08009918                TIM_CCxChannelCmd
+                0x08009968       0x48 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08009968                TIM_CCxChannelCmd
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x08009960       0xbc CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x08009960                HAL_TIMEx_MasterConfigSynchronization
+                0x080099b0       0xbc CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x080099b0                HAL_TIMEx_MasterConfigSynchronization
  .text.HAL_TIMEx_CommutCallback
-                0x08009a1c       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x08009a1c                HAL_TIMEx_CommutCallback
+                0x08009a6c       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x08009a6c                HAL_TIMEx_CommutCallback
  .text.HAL_TIMEx_BreakCallback
-                0x08009a2e       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x08009a2e                HAL_TIMEx_BreakCallback
+                0x08009a7e       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x08009a7e                HAL_TIMEx_BreakCallback
  .text.HAL_UART_Init
-                0x08009a40       0xa0 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x08009a40                HAL_UART_Init
+                0x08009a90       0xa0 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08009a90                HAL_UART_Init
  .text.HAL_UART_Transmit
-                0x08009ae0      0x116 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x08009ae0                HAL_UART_Transmit
- *fill*         0x08009bf6        0x2 
+                0x08009b30      0x116 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08009b30                HAL_UART_Transmit
+ *fill*         0x08009c46        0x2 
  .text.HAL_UART_IRQHandler
-                0x08009bf8      0x524 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x08009bf8                HAL_UART_IRQHandler
+                0x08009c48      0x524 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08009c48                HAL_UART_IRQHandler
  .text.HAL_UART_TxCpltCallback
-                0x0800a11c       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x0800a11c                HAL_UART_TxCpltCallback
+                0x0800a16c       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800a16c                HAL_UART_TxCpltCallback
  .text.HAL_UART_RxCpltCallback
-                0x0800a12e       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x0800a12e                HAL_UART_RxCpltCallback
+                0x0800a17e       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800a17e                HAL_UART_RxCpltCallback
  .text.HAL_UART_ErrorCallback
-                0x0800a140       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x0800a140                HAL_UART_ErrorCallback
+                0x0800a190       0x12 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800a190                HAL_UART_ErrorCallback
  .text.HAL_UARTEx_RxEventCallback
-                0x0800a152       0x16 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x0800a152                HAL_UARTEx_RxEventCallback
+                0x0800a1a2       0x16 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800a1a2                HAL_UARTEx_RxEventCallback
  .text.UART_WaitOnFlagUntilTimeout
-                0x0800a168       0xb2 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800a1b8       0xb2 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.UART_EndRxTransfer
-                0x0800a21a       0xc4 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800a26a       0xc4 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.UART_DMAAbortOnError
-                0x0800a2de       0x28 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800a32e       0x28 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.UART_Transmit_IT
-                0x0800a306       0x9e CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800a356       0x9e CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.UART_EndTransmit_IT
-                0x0800a3a4       0x30 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800a3f4       0x30 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.UART_Receive_IT
-                0x0800a3d4      0x17c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800a424      0x17c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.UART_SetConfig
-                0x0800a550      0x11c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800a5a0      0x11c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.USBD_Init
-                0x0800a66c       0x56 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
-                0x0800a66c                USBD_Init
+                0x0800a6bc       0x56 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+                0x0800a6bc                USBD_Init
  .text.USBD_RegisterClass
-                0x0800a6c2       0x32 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
-                0x0800a6c2                USBD_RegisterClass
+                0x0800a712       0x32 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+                0x0800a712                USBD_RegisterClass
  .text.USBD_Start
-                0x0800a6f4       0x18 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
-                0x0800a6f4                USBD_Start
+                0x0800a744       0x18 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+                0x0800a744                USBD_Start
  .text.USBD_RunTestMode
-                0x0800a70c       0x14 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
-                0x0800a70c                USBD_RunTestMode
+                0x0800a75c       0x14 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+                0x0800a75c                USBD_RunTestMode
  .text.USBD_SetClassConfig
-                0x0800a720       0x3e CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
-                0x0800a720                USBD_SetClassConfig
+                0x0800a770       0x3e CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+                0x0800a770                USBD_SetClassConfig
  .text.USBD_ClrClassConfig
-                0x0800a75e       0x26 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
-                0x0800a75e                USBD_ClrClassConfig
+                0x0800a7ae       0x26 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+                0x0800a7ae                USBD_ClrClassConfig
  .text.USBD_LL_SetupStage
-                0x0800a784       0x9a CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
-                0x0800a784                USBD_LL_SetupStage
+                0x0800a7d4       0x9a CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+                0x0800a7d4                USBD_LL_SetupStage
  .text.USBD_LL_DataOutStage
-                0x0800a81e       0xe2 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
-                0x0800a81e                USBD_LL_DataOutStage
+                0x0800a86e       0xe2 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+                0x0800a86e                USBD_LL_DataOutStage
  .text.USBD_LL_DataInStage
-                0x0800a900      0x14a CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
-                0x0800a900                USBD_LL_DataInStage
+                0x0800a950      0x14a CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+                0x0800a950                USBD_LL_DataInStage
  .text.USBD_LL_Reset
-                0x0800aa4a       0x82 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
-                0x0800aa4a                USBD_LL_Reset
+                0x0800aa9a       0x82 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+                0x0800aa9a                USBD_LL_Reset
  .text.USBD_LL_SetSpeed
-                0x0800aacc       0x1e CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
-                0x0800aacc                USBD_LL_SetSpeed
+                0x0800ab1c       0x1e CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+                0x0800ab1c                USBD_LL_SetSpeed
  .text.USBD_LL_Suspend
-                0x0800aaea       0x28 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
-                0x0800aaea                USBD_LL_Suspend
+                0x0800ab3a       0x28 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+                0x0800ab3a                USBD_LL_Suspend
  .text.USBD_LL_Resume
-                0x0800ab12       0x2a CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
-                0x0800ab12                USBD_LL_Resume
+                0x0800ab62       0x2a CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+                0x0800ab62                USBD_LL_Resume
  .text.USBD_LL_SOF
-                0x0800ab3c       0x34 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
-                0x0800ab3c                USBD_LL_SOF
+                0x0800ab8c       0x34 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+                0x0800ab8c                USBD_LL_SOF
  .text.USBD_StdDevReq
-                0x0800ab70       0xd4 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
-                0x0800ab70                USBD_StdDevReq
+                0x0800abc0       0xd4 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+                0x0800abc0                USBD_StdDevReq
  .text.USBD_StdItfReq
-                0x0800ac44       0x90 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
-                0x0800ac44                USBD_StdItfReq
+                0x0800ac94       0x90 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+                0x0800ac94                USBD_StdItfReq
  .text.USBD_StdEPReq
-                0x0800acd4      0x2c6 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
-                0x0800acd4                USBD_StdEPReq
- *fill*         0x0800af9a        0x2 
+                0x0800ad24      0x2c6 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+                0x0800ad24                USBD_StdEPReq
+ *fill*         0x0800afea        0x2 
  .text.USBD_GetDescriptor
-                0x0800af9c      0x2d0 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+                0x0800afec      0x2d0 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
  .text.USBD_SetAddress
-                0x0800b26c       0x86 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
- *fill*         0x0800b2f2        0x2 
+                0x0800b2bc       0x86 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+ *fill*         0x0800b342        0x2 
  .text.USBD_SetConfig
-                0x0800b2f4      0x11c CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+                0x0800b344      0x11c CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
  .text.USBD_GetConfig
-                0x0800b410       0x6a CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+                0x0800b460       0x6a CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
  .text.USBD_GetStatus
-                0x0800b47a       0x66 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+                0x0800b4ca       0x66 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
  .text.USBD_SetFeature
-                0x0800b4e0       0x28 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+                0x0800b530       0x28 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
  .text.USBD_ClrFeature
-                0x0800b508       0x42 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+                0x0800b558       0x42 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
  .text.USBD_ParseSetupRequest
-                0x0800b54a       0x72 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
-                0x0800b54a                USBD_ParseSetupRequest
+                0x0800b59a       0x72 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+                0x0800b59a                USBD_ParseSetupRequest
  .text.USBD_CtlError
-                0x0800b5bc       0x22 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
-                0x0800b5bc                USBD_CtlError
+                0x0800b60c       0x22 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+                0x0800b60c                USBD_CtlError
  .text.USBD_GetString
-                0x0800b5de       0x84 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
-                0x0800b5de                USBD_GetString
+                0x0800b62e       0x84 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+                0x0800b62e                USBD_GetString
  .text.USBD_GetLen
-                0x0800b662       0x2e CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+                0x0800b6b2       0x2e CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
  .text.USBD_CtlSendData
-                0x0800b690       0x38 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
-                0x0800b690                USBD_CtlSendData
+                0x0800b6e0       0x38 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
+                0x0800b6e0                USBD_CtlSendData
  .text.USBD_CtlContinueSendData
-                0x0800b6c8       0x24 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
-                0x0800b6c8                USBD_CtlContinueSendData
+                0x0800b718       0x24 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
+                0x0800b718                USBD_CtlContinueSendData
  .text.USBD_CtlPrepareRx
-                0x0800b6ec       0x3c CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
-                0x0800b6ec                USBD_CtlPrepareRx
+                0x0800b73c       0x3c CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
+                0x0800b73c                USBD_CtlPrepareRx
  .text.USBD_CtlContinueRx
-                0x0800b728       0x24 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
-                0x0800b728                USBD_CtlContinueRx
+                0x0800b778       0x24 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
+                0x0800b778                USBD_CtlContinueRx
  .text.USBD_CtlSendStatus
-                0x0800b74c       0x26 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
-                0x0800b74c                USBD_CtlSendStatus
+                0x0800b79c       0x26 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
+                0x0800b79c                USBD_CtlSendStatus
  .text.USBD_CtlReceiveStatus
-                0x0800b772       0x26 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
-                0x0800b772                USBD_CtlReceiveStatus
+                0x0800b7c2       0x26 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
+                0x0800b7c2                USBD_CtlReceiveStatus
  .text.USBD_CDC_Init
-                0x0800b798       0xf4 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+                0x0800b7e8       0xf4 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
  .text.USBD_CDC_DeInit
-                0x0800b88c       0x6e CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+                0x0800b8dc       0x6e CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
  .text.USBD_CDC_Setup
-                0x0800b8fa      0x146 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+                0x0800b94a      0x146 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
  .text.USBD_CDC_DataIn
-                0x0800ba40       0xa6 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+                0x0800ba90       0xa6 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
  .text.USBD_CDC_DataOut
-                0x0800bae6       0x56 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+                0x0800bb36       0x56 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
  .text.USBD_CDC_EP0_RxReady
-                0x0800bb3c       0x4e CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
- *fill*         0x0800bb8a        0x2 
+                0x0800bb8c       0x4e CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+ *fill*         0x0800bbda        0x2 
  .text.USBD_CDC_GetFSCfgDesc
-                0x0800bb8c       0x20 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+                0x0800bbdc       0x20 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
  .text.USBD_CDC_GetHSCfgDesc
-                0x0800bbac       0x20 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+                0x0800bbfc       0x20 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
  .text.USBD_CDC_GetOtherSpeedCfgDesc
-                0x0800bbcc       0x20 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+                0x0800bc1c       0x20 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
  .text.USBD_CDC_GetDeviceQualifierDescriptor
-                0x0800bbec       0x20 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
-                0x0800bbec                USBD_CDC_GetDeviceQualifierDescriptor
+                0x0800bc3c       0x20 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+                0x0800bc3c                USBD_CDC_GetDeviceQualifierDescriptor
  .text.USBD_CDC_RegisterInterface
-                0x0800bc0c       0x2c CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
-                0x0800bc0c                USBD_CDC_RegisterInterface
+                0x0800bc5c       0x2c CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+                0x0800bc5c                USBD_CDC_RegisterInterface
  .text.USBD_CDC_SetTxBuffer
-                0x0800bc38       0x32 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
-                0x0800bc38                USBD_CDC_SetTxBuffer
+                0x0800bc88       0x32 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+                0x0800bc88                USBD_CDC_SetTxBuffer
  .text.USBD_CDC_SetRxBuffer
-                0x0800bc6a       0x26 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
-                0x0800bc6a                USBD_CDC_SetRxBuffer
+                0x0800bcba       0x26 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+                0x0800bcba                USBD_CDC_SetRxBuffer
  .text.USBD_CDC_ReceivePacket
-                0x0800bc90       0x54 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
-                0x0800bc90                USBD_CDC_ReceivePacket
+                0x0800bce0       0x54 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+                0x0800bce0                USBD_CDC_ReceivePacket
  .text.Reset_Handler
-                0x0800bce4       0x48 CMakeFiles/AirMouse_fw.dir/startup_stm32f103xb.s.obj
-                0x0800bce4                Reset_Handler
+                0x0800bd34       0x48 CMakeFiles/AirMouse_fw.dir/startup_stm32f103xb.s.obj
+                0x0800bd34                Reset_Handler
  .text.Default_Handler
-                0x0800bd2c        0x2 CMakeFiles/AirMouse_fw.dir/startup_stm32f103xb.s.obj
-                0x0800bd2c                RTC_Alarm_IRQHandler
-                0x0800bd2c                EXTI2_IRQHandler
-                0x0800bd2c                TIM1_CC_IRQHandler
-                0x0800bd2c                PVD_IRQHandler
-                0x0800bd2c                EXTI3_IRQHandler
-                0x0800bd2c                EXTI0_IRQHandler
-                0x0800bd2c                I2C2_EV_IRQHandler
-                0x0800bd2c                ADC1_2_IRQHandler
-                0x0800bd2c                SPI1_IRQHandler
-                0x0800bd2c                TAMPER_IRQHandler
-                0x0800bd2c                DMA1_Channel4_IRQHandler
-                0x0800bd2c                USART3_IRQHandler
-                0x0800bd2c                RTC_IRQHandler
-                0x0800bd2c                DMA1_Channel7_IRQHandler
-                0x0800bd2c                CAN1_RX1_IRQHandler
-                0x0800bd2c                TIM4_IRQHandler
-                0x0800bd2c                I2C1_EV_IRQHandler
-                0x0800bd2c                RCC_IRQHandler
-                0x0800bd2c                TIM1_TRG_COM_IRQHandler
-                0x0800bd2c                DMA1_Channel1_IRQHandler
-                0x0800bd2c                Default_Handler
-                0x0800bd2c                EXTI15_10_IRQHandler
-                0x0800bd2c                EXTI9_5_IRQHandler
-                0x0800bd2c                SPI2_IRQHandler
-                0x0800bd2c                DMA1_Channel5_IRQHandler
-                0x0800bd2c                EXTI4_IRQHandler
-                0x0800bd2c                USB_HP_CAN1_TX_IRQHandler
-                0x0800bd2c                DMA1_Channel3_IRQHandler
-                0x0800bd2c                TIM1_UP_IRQHandler
-                0x0800bd2c                WWDG_IRQHandler
-                0x0800bd2c                TIM2_IRQHandler
-                0x0800bd2c                TIM1_BRK_IRQHandler
-                0x0800bd2c                EXTI1_IRQHandler
-                0x0800bd2c                I2C2_ER_IRQHandler
-                0x0800bd2c                DMA1_Channel2_IRQHandler
-                0x0800bd2c                CAN1_SCE_IRQHandler
-                0x0800bd2c                FLASH_IRQHandler
-                0x0800bd2c                USART1_IRQHandler
-                0x0800bd2c                I2C1_ER_IRQHandler
-                0x0800bd2c                USBWakeUp_IRQHandler
- *fill*         0x0800bd2e        0x2 
- .text.__errno  0x0800bd30        0xc C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
-                0x0800bd30                __errno
- .text.atan2f   0x0800bd3c        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-wf_atan2.o)
-                0x0800bd3c                atan2f
- .text.sqrtf    0x0800bd40       0x34 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-wf_sqrt.o)
-                0x0800bd40                sqrtf
+                0x0800bd7c        0x2 CMakeFiles/AirMouse_fw.dir/startup_stm32f103xb.s.obj
+                0x0800bd7c                RTC_Alarm_IRQHandler
+                0x0800bd7c                EXTI2_IRQHandler
+                0x0800bd7c                TIM1_CC_IRQHandler
+                0x0800bd7c                PVD_IRQHandler
+                0x0800bd7c                EXTI3_IRQHandler
+                0x0800bd7c                EXTI0_IRQHandler
+                0x0800bd7c                I2C2_EV_IRQHandler
+                0x0800bd7c                ADC1_2_IRQHandler
+                0x0800bd7c                SPI1_IRQHandler
+                0x0800bd7c                TAMPER_IRQHandler
+                0x0800bd7c                DMA1_Channel4_IRQHandler
+                0x0800bd7c                USART3_IRQHandler
+                0x0800bd7c                RTC_IRQHandler
+                0x0800bd7c                DMA1_Channel7_IRQHandler
+                0x0800bd7c                CAN1_RX1_IRQHandler
+                0x0800bd7c                TIM4_IRQHandler
+                0x0800bd7c                I2C1_EV_IRQHandler
+                0x0800bd7c                RCC_IRQHandler
+                0x0800bd7c                TIM1_TRG_COM_IRQHandler
+                0x0800bd7c                DMA1_Channel1_IRQHandler
+                0x0800bd7c                Default_Handler
+                0x0800bd7c                EXTI15_10_IRQHandler
+                0x0800bd7c                EXTI9_5_IRQHandler
+                0x0800bd7c                SPI2_IRQHandler
+                0x0800bd7c                DMA1_Channel5_IRQHandler
+                0x0800bd7c                EXTI4_IRQHandler
+                0x0800bd7c                USB_HP_CAN1_TX_IRQHandler
+                0x0800bd7c                DMA1_Channel3_IRQHandler
+                0x0800bd7c                TIM1_UP_IRQHandler
+                0x0800bd7c                WWDG_IRQHandler
+                0x0800bd7c                TIM2_IRQHandler
+                0x0800bd7c                TIM1_BRK_IRQHandler
+                0x0800bd7c                EXTI1_IRQHandler
+                0x0800bd7c                I2C2_ER_IRQHandler
+                0x0800bd7c                DMA1_Channel2_IRQHandler
+                0x0800bd7c                CAN1_SCE_IRQHandler
+                0x0800bd7c                FLASH_IRQHandler
+                0x0800bd7c                USART1_IRQHandler
+                0x0800bd7c                I2C1_ER_IRQHandler
+                0x0800bd7c                USBWakeUp_IRQHandler
+ *fill*         0x0800bd7e        0x2 
+ .text.__errno  0x0800bd80        0xc C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
+                0x0800bd80                __errno
+ .text.atan2f   0x0800bd8c        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-wf_atan2.o)
+                0x0800bd8c                atan2f
+ .text.sqrtf    0x0800bd90       0x34 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-wf_sqrt.o)
+                0x0800bd90                sqrtf
  .text.__ieee754_sqrtf
-                0x0800bd74       0xe0 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-ef_sqrt.o)
-                0x0800bd74                __ieee754_sqrtf
+                0x0800bdc4       0xe0 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-ef_sqrt.o)
+                0x0800bdc4                __ieee754_sqrtf
  .text.__ieee754_atan2f
-                0x0800be54      0x110 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-ef_atan2.o)
-                0x0800be54                __ieee754_atan2f
- .text.atanf    0x0800bf64      0x218 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-sf_atan.o)
-                0x0800bf64                atanf
- .text.fabsf    0x0800c17c        0x6 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-sf_fabs.o)
-                0x0800c17c                fabsf
+                0x0800bea4      0x110 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-ef_atan2.o)
+                0x0800bea4                __ieee754_atan2f
+ .text.atanf    0x0800bfb4      0x218 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-sf_atan.o)
+                0x0800bfb4                atanf
+ .text.fabsf    0x0800c1cc        0x6 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-sf_fabs.o)
+                0x0800c1cc                fabsf
  *(.glue_7)
- .glue_7        0x0800c182        0x0 linker stubs
+ .glue_7        0x0800c1d2        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0800c182        0x0 linker stubs
+ .glue_7t       0x0800c1d2        0x0 linker stubs
  *(.eh_frame)
- *fill*         0x0800c182        0x2 
- .eh_frame      0x0800c184        0x0 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+ *fill*         0x0800c1d2        0x2 
+ .eh_frame      0x0800c1d4        0x0 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.init)
- .init          0x0800c184        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
-                0x0800c184                _init
- .init          0x0800c188        0x8 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
+ .init          0x0800c1d4        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
+                0x0800c1d4                _init
+ .init          0x0800c1d8        0x8 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
  *(.fini)
- .fini          0x0800c190        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
-                0x0800c190                _fini
- .fini          0x0800c194        0x8 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
-                0x0800c19c                        . = ALIGN (0x4)
-                0x0800c19c                        _etext = .
+ .fini          0x0800c1e0        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
+                0x0800c1e0                _fini
+ .fini          0x0800c1e4        0x8 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
+                0x0800c1ec                        . = ALIGN (0x4)
+                0x0800c1ec                        _etext = .
 
-.vfp11_veneer   0x0800c19c        0x0
- .vfp11_veneer  0x0800c19c        0x0 linker stubs
+.vfp11_veneer   0x0800c1ec        0x0
+ .vfp11_veneer  0x0800c1ec        0x0 linker stubs
 
-.v4_bx          0x0800c19c        0x0
- .v4_bx         0x0800c19c        0x0 linker stubs
+.v4_bx          0x0800c1ec        0x0
+ .v4_bx         0x0800c1ec        0x0 linker stubs
 
-.iplt           0x0800c19c        0x0
- .iplt          0x0800c19c        0x0 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+.iplt           0x0800c1ec        0x0
+ .iplt          0x0800c1ec        0x0 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.rodata         0x0800c19c       0xac
-                0x0800c19c                        . = ALIGN (0x4)
+.rodata         0x0800c1ec       0xac
+                0x0800c1ec                        . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x0800c19c       0x46 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
+ .rodata        0x0800c1ec       0x46 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
  *(.rodata*)
- *fill*         0x0800c1e2        0x2 
+ *fill*         0x0800c232        0x2 
  .rodata.AHBPrescTable
-                0x0800c1e4       0x10 CMakeFiles/AirMouse_fw.dir/Core/Src/system_stm32f1xx.c.obj
-                0x0800c1e4                AHBPrescTable
+                0x0800c234       0x10 CMakeFiles/AirMouse_fw.dir/Core/Src/system_stm32f1xx.c.obj
+                0x0800c234                AHBPrescTable
  .rodata.APBPrescTable
-                0x0800c1f4        0x8 CMakeFiles/AirMouse_fw.dir/Core/Src/system_stm32f1xx.c.obj
-                0x0800c1f4                APBPrescTable
+                0x0800c244        0x8 CMakeFiles/AirMouse_fw.dir/Core/Src/system_stm32f1xx.c.obj
+                0x0800c244                APBPrescTable
  .rodata.aPLLMULFactorTable.1
-                0x0800c1fc       0x10 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x0800c24c       0x10 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .rodata.aPredivFactorTable.0
-                0x0800c20c        0x2 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- *fill*         0x0800c20e        0x2 
+                0x0800c25c        0x2 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ *fill*         0x0800c25e        0x2 
  .rodata.CSWTCH.9
-                0x0800c210        0xc C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-ef_atan2.o)
+                0x0800c260        0xc C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-ef_atan2.o)
  .rodata.CSWTCH.8
-                0x0800c21c        0xc C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-ef_atan2.o)
+                0x0800c26c        0xc C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-ef_atan2.o)
  .rodata.atanlo
-                0x0800c228       0x10 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-sf_atan.o)
+                0x0800c278       0x10 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-sf_atan.o)
  .rodata.atanhi
-                0x0800c238       0x10 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-sf_atan.o)
-                0x0800c248                        . = ALIGN (0x4)
+                0x0800c288       0x10 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-sf_atan.o)
+                0x0800c298                        . = ALIGN (0x4)
 
-.rel.dyn        0x0800c248        0x0
- .rel.iplt      0x0800c248        0x0 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+.rel.dyn        0x0800c298        0x0
+ .rel.iplt      0x0800c298        0x0 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x0800c248        0x0
-                0x0800c248                        __exidx_start = .
+.ARM            0x0800c298        0x0
+                0x0800c298                        __exidx_start = .
  *(.ARM.exidx*)
-                0x0800c248                        __exidx_end = .
+                0x0800c298                        __exidx_end = .
 
-.preinit_array  0x0800c248        0x0
-                0x0800c248                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0800c298        0x0
+                0x0800c298                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0800c248                        PROVIDE (__preinit_array_end = .)
+                0x0800c298                        PROVIDE (__preinit_array_end = .)
 
-.init_array     0x0800c248        0x4
-                0x0800c248                        PROVIDE (__init_array_start = .)
+.init_array     0x0800c298        0x4
+                0x0800c298                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0800c248        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x0800c24c                        PROVIDE (__init_array_end = .)
+ .init_array    0x0800c298        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x0800c29c                        PROVIDE (__init_array_end = .)
 
-.fini_array     0x0800c24c        0x4
+.fini_array     0x0800c29c        0x4
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0800c24c        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+ .fini_array    0x0800c29c        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x0800c250                        _sidata = LOADADDR (.data)
+                0x0800c2a0                        _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x1e0 load address 0x0800c250
+.data           0x20000000      0x1e0 load address 0x0800c2a0
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -6679,11 +6679,11 @@ LOAD C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x200001e0                        . = ALIGN (0x4)
                 0x200001e0                        _edata = .
 
-.igot.plt       0x200001e0        0x0 load address 0x0800c430
+.igot.plt       0x200001e0        0x0 load address 0x0800c480
  .igot.plt      0x200001e0        0x0 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
                 0x200001e0                        . = ALIGN (0x4)
 
-.bss            0x200001e0     0x149c load address 0x0800c430
+.bss            0x200001e0     0x149c load address 0x0800c480
                 0x200001e0                        _sbss = .
                 0x200001e0                        __bss_start__ = _sbss
  *(.bss)
@@ -6765,7 +6765,7 @@ LOAD C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x2000167c                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x2000167c      0x604 load address 0x0800c430
+                0x2000167c      0x604 load address 0x0800c480
                 0x20001680                        . = ALIGN (0x8)
  *fill*         0x2000167c        0x4 
                 [!provide]                        PROVIDE (end = .)
@@ -6964,45 +6964,45 @@ LOAD C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_frame   0x00006430       0x20 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a(libm_a-sf_fabs.o)
  .debug_frame   0x00006450       0x24 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_arm_unordsf2.o)
 
-.debug_info     0x00000000    0x1aa97
+.debug_info     0x00000000    0x1aaa5
  .debug_info    0x00000000      0x254 CMakeFiles/AirMouse_fw.dir/Core/Src/button.c.obj
  .debug_info    0x00000254       0xf1 CMakeFiles/AirMouse_fw.dir/Core/Src/complementary_filter.c.obj
- .debug_info    0x00000345      0xe51 CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
- .debug_info    0x00001196      0x2cf CMakeFiles/AirMouse_fw.dir/Core/Src/dma.c.obj
- .debug_info    0x00001465      0x7b7 CMakeFiles/AirMouse_fw.dir/Core/Src/encoder.c.obj
- .debug_info    0x00001c1c      0x2b7 CMakeFiles/AirMouse_fw.dir/Core/Src/gpio.c.obj
- .debug_info    0x00001ed3      0x7e3 CMakeFiles/AirMouse_fw.dir/Core/Src/i2c.c.obj
- .debug_info    0x000026b6       0xfb CMakeFiles/AirMouse_fw.dir/Core/Src/kalman_filter.c.obj
- .debug_info    0x000027b1      0x3ab CMakeFiles/AirMouse_fw.dir/Core/Src/main.c.obj
- .debug_info    0x00002b5c      0xb4c CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
- .debug_info    0x000036a8      0x1f1 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_info    0x00003899      0xe1c CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_info    0x000046b5      0x222 CMakeFiles/AirMouse_fw.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_info    0x000048d7      0xb17 CMakeFiles/AirMouse_fw.dir/Core/Src/tim.c.obj
- .debug_info    0x000053ee      0x967 CMakeFiles/AirMouse_fw.dir/Core/Src/usart.c.obj
- .debug_info    0x00005d55      0x63d CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usb_device.c.obj
- .debug_info    0x00006392      0x44a CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
- .debug_info    0x000067dc      0x7ec CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
- .debug_info    0x00006fc8     0x1864 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
- .debug_info    0x0000882c     0x16dc CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
- .debug_info    0x00009f08      0x6c3 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj
- .debug_info    0x0000a5cb     0x17ae CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
- .debug_info    0x0000bd79      0x704 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_info    0x0000c47d      0x7d5 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_info    0x0000cc52      0x3c0 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
- .debug_info    0x0000d012      0x5ab CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_info    0x0000d5bd      0x6d2 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_info    0x0000dc8f      0xa87 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_info    0x0000e716     0x2524 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
- .debug_info    0x00010c3a     0x2959 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_info    0x00013593     0x149b CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_info    0x00014a2e     0x2eed CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_info    0x0001791b      0xa52 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
- .debug_info    0x0001836d      0x91c CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
- .debug_info    0x00018c89      0x6a0 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
- .debug_info    0x00019329     0x1043 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
- .debug_info    0x0001a36c       0x30 CMakeFiles/AirMouse_fw.dir/startup_stm32f103xb.s.obj
- .debug_info    0x0001a39c      0x6fb C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
+ .debug_info    0x00000345      0xe5f CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
+ .debug_info    0x000011a4      0x2cf CMakeFiles/AirMouse_fw.dir/Core/Src/dma.c.obj
+ .debug_info    0x00001473      0x7b7 CMakeFiles/AirMouse_fw.dir/Core/Src/encoder.c.obj
+ .debug_info    0x00001c2a      0x2b7 CMakeFiles/AirMouse_fw.dir/Core/Src/gpio.c.obj
+ .debug_info    0x00001ee1      0x7e3 CMakeFiles/AirMouse_fw.dir/Core/Src/i2c.c.obj
+ .debug_info    0x000026c4       0xfb CMakeFiles/AirMouse_fw.dir/Core/Src/kalman_filter.c.obj
+ .debug_info    0x000027bf      0x3ab CMakeFiles/AirMouse_fw.dir/Core/Src/main.c.obj
+ .debug_info    0x00002b6a      0xb4c CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
+ .debug_info    0x000036b6      0x1f1 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_info    0x000038a7      0xe1c CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_info    0x000046c3      0x222 CMakeFiles/AirMouse_fw.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_info    0x000048e5      0xb17 CMakeFiles/AirMouse_fw.dir/Core/Src/tim.c.obj
+ .debug_info    0x000053fc      0x967 CMakeFiles/AirMouse_fw.dir/Core/Src/usart.c.obj
+ .debug_info    0x00005d63      0x63d CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usb_device.c.obj
+ .debug_info    0x000063a0      0x44a CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
+ .debug_info    0x000067ea      0x7ec CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+ .debug_info    0x00006fd6     0x1864 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+ .debug_info    0x0000883a     0x16dc CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
+ .debug_info    0x00009f16      0x6c3 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj
+ .debug_info    0x0000a5d9     0x17ae CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+ .debug_info    0x0000bd87      0x704 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_info    0x0000c48b      0x7d5 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_info    0x0000cc60      0x3c0 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
+ .debug_info    0x0000d020      0x5ab CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_info    0x0000d5cb      0x6d2 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_info    0x0000dc9d      0xa87 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_info    0x0000e724     0x2524 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+ .debug_info    0x00010c48     0x2959 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_info    0x000135a1     0x149b CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_info    0x00014a3c     0x2eed CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_info    0x00017929      0xa52 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+ .debug_info    0x0001837b      0x91c CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+ .debug_info    0x00018c97      0x6a0 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
+ .debug_info    0x00019337     0x1043 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+ .debug_info    0x0001a37a       0x30 CMakeFiles/AirMouse_fw.dir/startup_stm32f103xb.s.obj
+ .debug_info    0x0001a3aa      0x6fb C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
 
 .debug_abbrev   0x00000000     0x4907
  .debug_abbrev  0x00000000      0x163 CMakeFiles/AirMouse_fw.dir/Core/Src/button.c.obj
@@ -7262,122 +7262,122 @@ LOAD C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_macro   0x00005d12      0x34d CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
  .debug_macro   0x0000605f      0x360 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
 
-.debug_line     0x00000000    0x2183a
+.debug_line     0x00000000    0x21853
  .debug_line    0x00000000      0x8a1 CMakeFiles/AirMouse_fw.dir/Core/Src/button.c.obj
  .debug_line    0x000008a1      0x156 CMakeFiles/AirMouse_fw.dir/Core/Src/complementary_filter.c.obj
- .debug_line    0x000009f7      0xb93 CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
- .debug_line    0x0000158a      0x802 CMakeFiles/AirMouse_fw.dir/Core/Src/dma.c.obj
- .debug_line    0x00001d8c      0x93b CMakeFiles/AirMouse_fw.dir/Core/Src/encoder.c.obj
- .debug_line    0x000026c7      0x829 CMakeFiles/AirMouse_fw.dir/Core/Src/gpio.c.obj
- .debug_line    0x00002ef0      0x86c CMakeFiles/AirMouse_fw.dir/Core/Src/i2c.c.obj
- .debug_line    0x0000375c      0x166 CMakeFiles/AirMouse_fw.dir/Core/Src/kalman_filter.c.obj
- .debug_line    0x000038c2      0xbf7 CMakeFiles/AirMouse_fw.dir/Core/Src/main.c.obj
- .debug_line    0x000044b9      0xbc9 CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
- .debug_line    0x00005082      0x808 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_line    0x0000588a      0x929 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_line    0x000061b3      0x885 CMakeFiles/AirMouse_fw.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_line    0x00006a38      0x88a CMakeFiles/AirMouse_fw.dir/Core/Src/tim.c.obj
- .debug_line    0x000072c2      0x89c CMakeFiles/AirMouse_fw.dir/Core/Src/usart.c.obj
- .debug_line    0x00007b5e      0xb4a CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usb_device.c.obj
- .debug_line    0x000086a8      0xbab CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
- .debug_line    0x00009253      0xb92 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
- .debug_line    0x00009de5      0xf47 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
- .debug_line    0x0000ad2c     0x1507 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
- .debug_line    0x0000c233      0x880 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj
- .debug_line    0x0000cab3     0x1183 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
- .debug_line    0x0000dc36      0xab2 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_line    0x0000e6e8      0xebb CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_line    0x0000f5a3      0x9fc CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
- .debug_line    0x0000ff9f      0xb4b CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_line    0x00010aea      0xf0b CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_line    0x000119f5      0xc9e CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_line    0x00012693     0x3d4f CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
- .debug_line    0x000163e2     0x35d7 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_line    0x000199b9     0x1a01 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_line    0x0001b3ba     0x2991 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_line    0x0001dd4b      0xe8c CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
- .debug_line    0x0001ebd7     0x10cc CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
- .debug_line    0x0001fca3      0xb22 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
- .debug_line    0x000207c5      0xe78 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
- .debug_line    0x0002163d       0x78 CMakeFiles/AirMouse_fw.dir/startup_stm32f103xb.s.obj
- .debug_line    0x000216b5      0x185 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
+ .debug_line    0x000009f7      0xbaa CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
+ .debug_line    0x000015a1      0x802 CMakeFiles/AirMouse_fw.dir/Core/Src/dma.c.obj
+ .debug_line    0x00001da3      0x93b CMakeFiles/AirMouse_fw.dir/Core/Src/encoder.c.obj
+ .debug_line    0x000026de      0x829 CMakeFiles/AirMouse_fw.dir/Core/Src/gpio.c.obj
+ .debug_line    0x00002f07      0x86c CMakeFiles/AirMouse_fw.dir/Core/Src/i2c.c.obj
+ .debug_line    0x00003773      0x166 CMakeFiles/AirMouse_fw.dir/Core/Src/kalman_filter.c.obj
+ .debug_line    0x000038d9      0xbf9 CMakeFiles/AirMouse_fw.dir/Core/Src/main.c.obj
+ .debug_line    0x000044d2      0xbc9 CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
+ .debug_line    0x0000509b      0x808 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_line    0x000058a3      0x929 CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_line    0x000061cc      0x885 CMakeFiles/AirMouse_fw.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_line    0x00006a51      0x88a CMakeFiles/AirMouse_fw.dir/Core/Src/tim.c.obj
+ .debug_line    0x000072db      0x89c CMakeFiles/AirMouse_fw.dir/Core/Src/usart.c.obj
+ .debug_line    0x00007b77      0xb4a CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usb_device.c.obj
+ .debug_line    0x000086c1      0xbab CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
+ .debug_line    0x0000926c      0xb92 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+ .debug_line    0x00009dfe      0xf47 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+ .debug_line    0x0000ad45     0x1507 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
+ .debug_line    0x0000c24c      0x880 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj
+ .debug_line    0x0000cacc     0x1183 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+ .debug_line    0x0000dc4f      0xab2 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_line    0x0000e701      0xebb CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_line    0x0000f5bc      0x9fc CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
+ .debug_line    0x0000ffb8      0xb4b CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_line    0x00010b03      0xf0b CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_line    0x00011a0e      0xc9e CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_line    0x000126ac     0x3d4f CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+ .debug_line    0x000163fb     0x35d7 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_line    0x000199d2     0x1a01 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_line    0x0001b3d3     0x2991 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_line    0x0001dd64      0xe8c CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+ .debug_line    0x0001ebf0     0x10cc CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+ .debug_line    0x0001fcbc      0xb22 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
+ .debug_line    0x000207de      0xe78 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+ .debug_line    0x00021656       0x78 CMakeFiles/AirMouse_fw.dir/startup_stm32f103xb.s.obj
+ .debug_line    0x000216ce      0x185 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
 
-.debug_str      0x00000000    0x955b2
+.debug_str      0x00000000    0x955be
  .debug_str     0x00000000    0x8793e CMakeFiles/AirMouse_fw.dir/Core/Src/button.c.obj
                               0x87c83 (size before relaxing)
  .debug_str     0x0008793e      0x102 CMakeFiles/AirMouse_fw.dir/Core/Src/complementary_filter.c.obj
                                0x2eb6 (size before relaxing)
- .debug_str     0x00087a40     0x64b4 CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
-                              0x8e1a9 (size before relaxing)
- .debug_str     0x0008def4      0x355 CMakeFiles/AirMouse_fw.dir/Core/Src/dma.c.obj
+ .debug_str     0x00087a40     0x64c0 CMakeFiles/AirMouse_fw.dir/Core/Src/data_processing.c.obj
+                              0x8e1b5 (size before relaxing)
+ .debug_str     0x0008df00      0x355 CMakeFiles/AirMouse_fw.dir/Core/Src/dma.c.obj
                               0x87e89 (size before relaxing)
- .debug_str     0x0008e249       0xcb CMakeFiles/AirMouse_fw.dir/Core/Src/encoder.c.obj
+ .debug_str     0x0008e255       0xcb CMakeFiles/AirMouse_fw.dir/Core/Src/encoder.c.obj
                               0x8b315 (size before relaxing)
- .debug_str     0x0008e314       0xa4 CMakeFiles/AirMouse_fw.dir/Core/Src/gpio.c.obj
+ .debug_str     0x0008e320       0xa4 CMakeFiles/AirMouse_fw.dir/Core/Src/gpio.c.obj
                               0x87c2b (size before relaxing)
- .debug_str     0x0008e3b8      0x2ec CMakeFiles/AirMouse_fw.dir/Core/Src/i2c.c.obj
+ .debug_str     0x0008e3c4      0x2ec CMakeFiles/AirMouse_fw.dir/Core/Src/i2c.c.obj
                               0x880e5 (size before relaxing)
- .debug_str     0x0008e6a4       0xa6 CMakeFiles/AirMouse_fw.dir/Core/Src/kalman_filter.c.obj
+ .debug_str     0x0008e6b0       0xa6 CMakeFiles/AirMouse_fw.dir/Core/Src/kalman_filter.c.obj
                                0x2e9d (size before relaxing)
- .debug_str     0x0008e74a      0xd04 CMakeFiles/AirMouse_fw.dir/Core/Src/main.c.obj
+ .debug_str     0x0008e756      0xd04 CMakeFiles/AirMouse_fw.dir/Core/Src/main.c.obj
                               0x8e537 (size before relaxing)
- .debug_str     0x0008f44e      0x29b CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
+ .debug_str     0x0008f45a      0x29b CMakeFiles/AirMouse_fw.dir/Core/Src/mpu6050.c.obj
                               0x8a3b5 (size before relaxing)
- .debug_str     0x0008f6e9       0xaa CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_str     0x0008f6f5       0xaa CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_hal_msp.c.obj
                               0x87bb3 (size before relaxing)
- .debug_str     0x0008f793      0x4ac CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_str     0x0008f79f      0x4ac CMakeFiles/AirMouse_fw.dir/Core/Src/stm32f1xx_it.c.obj
                               0x88689 (size before relaxing)
- .debug_str     0x0008fc3f       0xce CMakeFiles/AirMouse_fw.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_str     0x0008fc4b       0xce CMakeFiles/AirMouse_fw.dir/Core/Src/system_stm32f1xx.c.obj
                               0x87a43 (size before relaxing)
- .debug_str     0x0008fd0d      0x1c3 CMakeFiles/AirMouse_fw.dir/Core/Src/tim.c.obj
+ .debug_str     0x0008fd19      0x1c3 CMakeFiles/AirMouse_fw.dir/Core/Src/tim.c.obj
                               0x88568 (size before relaxing)
- .debug_str     0x0008fed0       0xbd CMakeFiles/AirMouse_fw.dir/Core/Src/usart.c.obj
+ .debug_str     0x0008fedc       0xbd CMakeFiles/AirMouse_fw.dir/Core/Src/usart.c.obj
                               0x883b9 (size before relaxing)
- .debug_str     0x0008ff8d      0x7fc CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usb_device.c.obj
+ .debug_str     0x0008ff99      0x7fc CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usb_device.c.obj
                               0x8c05c (size before relaxing)
- .debug_str     0x00090789      0x2bc CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
+ .debug_str     0x00090795      0x2bc CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_desc.c.obj
                               0x8bc0d (size before relaxing)
- .debug_str     0x00090a45      0x179 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+ .debug_str     0x00090a51      0x179 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
                               0x8c082 (size before relaxing)
- .debug_str     0x00090bbe      0x555 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
+ .debug_str     0x00090bca      0x555 CMakeFiles/AirMouse_fw.dir/USB_DEVICE/Target/usbd_conf.c.obj
                               0x8cae7 (size before relaxing)
- .debug_str     0x00091113      0x3c7 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
+ .debug_str     0x0009111f      0x3c7 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
                               0x88360 (size before relaxing)
- .debug_str     0x000914da      0x1ac CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj
+ .debug_str     0x000914e6      0x1ac CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj
                               0x87ec2 (size before relaxing)
- .debug_str     0x00091686      0x179 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
+ .debug_str     0x00091692      0x179 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
                               0x87f14 (size before relaxing)
- .debug_str     0x000917ff      0x3c8 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_str     0x0009180b      0x3c8 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
                               0x88176 (size before relaxing)
- .debug_str     0x00091bc7      0x279 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_str     0x00091bd3      0x279 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
                               0x87e72 (size before relaxing)
- .debug_str     0x00091e40       0xef CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
+ .debug_str     0x00091e4c       0xef CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
                               0x87bc2 (size before relaxing)
- .debug_str     0x00091f2f      0x303 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_str     0x00091f3b      0x303 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
                               0x87dc9 (size before relaxing)
- .debug_str     0x00092232      0x251 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_str     0x0009223e      0x251 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
                               0x87dec (size before relaxing)
- .debug_str     0x00092483      0x25e CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_str     0x0009248f      0x25e CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
                               0x880c2 (size before relaxing)
- .debug_str     0x000926e1      0xb97 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+ .debug_str     0x000926ed      0xb97 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
                               0x88b0a (size before relaxing)
- .debug_str     0x00093278      0xdf8 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_str     0x00093284      0xdf8 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
                               0x88e74 (size before relaxing)
- .debug_str     0x00094070      0x4e3 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_str     0x0009407c      0x4e3 CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
                               0x88680 (size before relaxing)
- .debug_str     0x00094553      0x62c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_str     0x0009455f      0x62c CMakeFiles/AirMouse_fw.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
                               0x884e3 (size before relaxing)
- .debug_str     0x00094b7f      0x191 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+ .debug_str     0x00094b8b      0x191 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
                               0x8be8a (size before relaxing)
- .debug_str     0x00094d10      0x135 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+ .debug_str     0x00094d1c      0x135 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
                               0x8bda4 (size before relaxing)
- .debug_str     0x00094e45       0xb3 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
+ .debug_str     0x00094e51       0xb3 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
                               0x8bcd1 (size before relaxing)
- .debug_str     0x00094ef8      0x1e2 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+ .debug_str     0x00094f04      0x1e2 CMakeFiles/AirMouse_fw.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
                               0x8c55a (size before relaxing)
- .debug_str     0x000950da       0x85 CMakeFiles/AirMouse_fw.dir/startup_stm32f103xb.s.obj
+ .debug_str     0x000950e6       0x85 CMakeFiles/AirMouse_fw.dir/startup_stm32f103xb.s.obj
                                  0xe4 (size before relaxing)
- .debug_str     0x0009515f      0x453 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
+ .debug_str     0x0009516b      0x453 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
                                 0x523 (size before relaxing)
 
 .comment        0x00000000       0x43

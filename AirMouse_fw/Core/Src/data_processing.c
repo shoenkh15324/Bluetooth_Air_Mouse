@@ -19,7 +19,7 @@ int32_t prev_wheel = 0;
 float gy_bias = 0.0;
 
 // sensitivity coefficient
-float x_sensitivity = 8.0;
+float x_sensitivity = 5.0;
 float y_sensitivity = 5.0;
 
 void dataProcessingInit()
@@ -52,8 +52,15 @@ int8_t calculateMouseX()
   // Apply kalman filter
   float k_filtered_yaw = KalmanFilter_Update(&kf_z, c_filtered_yaw);
 
+  float threshold_x = 0.2 * x_sensitivity;
+
   // Apply SENSITIVITY
   int mouse_x = (int)(k_filtered_yaw * x_sensitivity * (-1));
+
+  if (mouse_x < threshold_x && mouse_x > 0)
+  {
+    mouse_x = 0.0;
+  }
 
   return mouse_x;
 }
@@ -220,9 +227,6 @@ bool dataProcessing()
 
   // Data Transmit.
   HAL_UART_Transmit(&huart2, (uint8_t *)HID_report, sizeof(HID_report), 10);
-
-  // Print HID_report data on cli terminal.
-  // printf("%d %d %d %d (encoder : %d)\n", HID_report[0], HID_report[1], HID_report[2], HID_report[3], prev_wheel);
 
   return 1;
 }

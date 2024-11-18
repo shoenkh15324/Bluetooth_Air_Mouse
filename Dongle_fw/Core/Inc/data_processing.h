@@ -11,15 +11,12 @@
 #include <stdbool.h>
 #include <string.h>
 
-#include "cli.h"
+#include "usart.h"
 #include "usb_device.h"
 #include "usbd_hid.h"
 
-
 bool receiveData();
 void sendHIDReport();
-
-//uint8_t USBD_HID_SendReport(USBD_HandleTypeDef  *pdev, uint8_t *report, uint16_t len);
-
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart);
 
 #endif /* INC_DATA_PROCESSING_H_ */

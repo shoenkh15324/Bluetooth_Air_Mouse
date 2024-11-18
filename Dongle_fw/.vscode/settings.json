@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "data_processing.h": "c",
+    "bluetooth.h": "c",
+    "main.h": "c",
+    "uart.h": "c",
+    "usart.h": "c"
+  },
+  "cortex-debug.variableUseNaturalFormat": true
+}
