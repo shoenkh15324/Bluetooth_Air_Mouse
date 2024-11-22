@@ -40,7 +40,7 @@
 /* USER CODE END PFP */
 
 /* USB Device Core handle declaration. */
-extern USBD_HandleTypeDef hUsbDeviceFS;
+USBD_HandleTypeDef hUsbDeviceFS;
 
 /*
  * -- Insert your variables declaration here --

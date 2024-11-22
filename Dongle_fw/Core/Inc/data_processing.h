@@ -14,9 +14,11 @@
 #include "usart.h"
 #include "usb_device.h"
 #include "usbd_hid.h"
+#include "crc.h"
 
+uint32_t dataPadding(int8_t *HID_report);
+bool validatePacket(int8_t *packet);
 bool receiveData();
 void sendHIDReport();
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart);
 
 #endif /* INC_DATA_PROCESSING_H_ */

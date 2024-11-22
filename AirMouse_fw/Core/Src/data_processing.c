@@ -186,44 +186,63 @@ void readData()
   readEncoderSwitch(ENCODER_OTS_GPIO_Port, ENCODER_OTS_Pin);
 }
 
+uint32_t dataPadding(int8_t *HID_report)
+{
+  uint32_t value = 0;
+
+  value |= ((uint32_t)HID_report[1] << 24);
+  value |= ((uint32_t)HID_report[2] << 16);
+  value |= ((uint32_t)HID_report[3] << 8);
+  value |= ((uint32_t)HID_report[4] << 0);
+
+  return value;
+}
+
 bool dataProcessing()
 {
   // USB HID Data
-  int8_t HID_report[4];
+  int8_t HID_report[7];
 
   // Initialize USB HID Data.
-  HID_report[0] = 0x00; // Mouse Button State (0x01: Left Button Clicked, 0x02: Right Button Clicked)
-  HID_report[1] = 0x00; // Mouse X-axis Movement.
-  HID_report[2] = 0x00; // Mouse Y-axis Movement.
-  HID_report[3] = 0x00; // Mouse Wheel Movement.
+  HID_report[0] = 0x0B; // Start bit.
+  HID_report[1] = 0x00; // Mouse Button State.
+  HID_report[2] = 0x00; // Mouse X-axis Movement.
+  HID_report[3] = 0x00; // Mouse Y-axis Movement.
+  HID_report[4] = 0x00; // Mouse Wheel Movement.
+  HID_report[5] = 0x00; // CRC
+  HID_report[6] = 0x7F; // End bit.
 
   // Mouse Left Button Clicked.
   if (isButtonPressed(LEFT_BTN_GPIO_Port, LEFT_BTN_Pin))
   {
-    HID_report[0] = 0x01;
+    HID_report[1] = 0x01;
   }
   // Mouse Right Button Clicked.
   else if (isButtonPressed(RIGHT_BTN_GPIO_Port, RIGHT_BTN_Pin))
   {
-    HID_report[0] = 0x02;
+    HID_report[1] = 0x02;
   }
 
   // Mouse Wheel
   if (getIsSwitch() == 1)
   {
-    HID_report[3] = 0;
+    HID_report[4] = 0;
     changeDPI();
     HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
   }
   else
   {
-    HID_report[3] = calculateMouseWheel();
+    HID_report[4] = calculateMouseWheel();
     HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
   }
 
   // Calculate Mouse X, Y Movement.
-  HID_report[1] = calculateMouseX();
-  HID_report[2] = calculateMouseY();
+  HID_report[2] = calculateMouseX();
+  HID_report[3] = calculateMouseY();
+
+  // Calculate CRC
+  uint32_t padded_value = dataPadding(&HID_report);
+  HID_report[5] = HAL_CRC_Calculate(&hcrc, (uint32_t *)&padded_value, 1);
 
   // Data Transmit.
   HAL_UART_Transmit(&huart2, (uint8_t *)HID_report, sizeof(HID_report), 10);

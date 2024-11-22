@@ -10,7 +10,7 @@
 					[
 						1
 					],
-					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.22"
@@ -24,7 +24,7 @@
 				},
 				{
 					"build" : "cmake/stm32cubemx",
-					"jsonFile" : "directory-cmake.stm32cubemx-RelWithDebInfo-a874d3cc84b5982fda2e.json",
+					"jsonFile" : "directory-cmake.stm32cubemx-Debug-a874d3cc84b5982fda2e.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.22"
@@ -34,7 +34,7 @@
 					"source" : "cmake/stm32cubemx"
 				}
 			],
-			"name" : "RelWithDebInfo",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -46,7 +46,7 @@
 					[
 						0
 					],
-					"name" : "Dongle_fw",
+					"name" : "AirMouse_fw",
 					"targetIndexes" : 
 					[
 						0
@@ -65,9 +65,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "Dongle_fw::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Dongle_fw-RelWithDebInfo-4ec8e6a488d3280b87e6.json",
-					"name" : "Dongle_fw",
+					"id" : "AirMouse_fw::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AirMouse_fw-Debug-43a4d057d0506b98841d.json",
+					"name" : "AirMouse_fw",
 					"projectIndex" : 0
 				}
 			]
@@ -76,8 +76,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/mok07/Desktop/Study/VanLab/VanLab_Project/Bluetooth_Air_Mouse/Dongle_fw/build/RelWithDebInfo",
-		"source" : "C:/Users/mok07/Desktop/Study/VanLab/VanLab_Project/Bluetooth_Air_Mouse/Dongle_fw"
+		"build" : "C:/Users/mok07/Desktop/Study/VanLab/VanLab_Project/Bluetooth_Air_Mouse/AirMouse_fw/build/Debug",
+		"source" : "C:/Users/mok07/Desktop/Study/VanLab/VanLab_Project/Bluetooth_Air_Mouse/AirMouse_fw"
 	},
 	"version" : 
 	{

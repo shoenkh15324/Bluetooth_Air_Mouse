@@ -18,11 +18,13 @@
 #include "complementary_filter.h"
 #include "tim.h"
 #include "encoder.h"
+#include "crc.h"
 
 #define TIME_INTERVAL 0.02f // Yaw integration time-interval
 #define X_SENSITIVITY_WEIGHT 0.25
 #define Y_SENSITIVITY_WEIGHT 0.25
 
+uint32_t dataPadding(int8_t *HID_report);
 void dataProcessingInit();
 void filterInit();
 void readData();
